@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Annotation.AnnotationOrder"/>
+      <class name="Assignment.Calendar"/>
+      <class name="com.webElementMethods.GetCssValue"/>
+      <class name="com.webElementMethods.GetLocationMethod"/>
+      <class name="Assignment.WindowHandels"/>
+      <class name="com.webElementMethods.BooleanMethod"/>
+      <class name="com.webElementMethods.GetAttributeMethod"/>
+      <class name="Assignment.Amazon"/>
+      <class name="com.webElementMethods.SendKeys"/>
+      <class name="com.webElementMethods.GetTagNameMethod"/>
+      <class name="DriverInterFaceOperation.WindowOperations"/>
+      <class name="Assignment.Assignment1"/>
+      <class name="Assignment.Assignment2"/>
+      <class name="Assignment.Assignment3"/>
+      <class name="Assignment.GroupTest"/>
+      <class name="WindowBasedOperation.Program1"/>
+      <class name="GetOperation.GetUrl"/>
+      <class name="DriverInterFaceOperation.NavigationBrowserHistrory"/>
+      <class name="Assignment.OrderOfExecution"/>
+      <class name="DriverInterFaceOperation.GetWindowhandles"/>
+      <class name="NavigationOperation.Program1"/>
+      <class name="com.webElementMethods.ToSubmit"/>
+      <class name="com.assertion.Program2"/>
+      <class name="com.assertion.Program1"/>
+      <class name="Assignment.BlockTest"/>
+      <class name="Assignment.FindElments"/>
+      <class name="DriverInterFaceOperation.GetOperation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,57 @@
+package WebTable;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+		
+		driver.get("https://the-internet.herokuapp.com");
+	
+		WebElement webel=driver.findElement(By.xpath("//a[text()=\"Sortable Data Tables\"]"));
+		
+		webel.click();
+		
+		List<WebElement> col=driver.findElements(By.xpath("//table[@id=\"table1\"]/thead/child::tr/th"));
+			int cols=col.size();
+			List<WebElement> row=driver.findElements(By.xpath("//table[@id=\"table1\"]/child::tbody/tr"));
+			
+			int rows=row.size();
+			
+			System.out.println(col.size());
+			System.out.println(row.size());
+			
+			int rownum=0;
+			for(int i=1;i<=col.size();i++)
+			{
+				
+				for(int j=1;j<=row.size();j++)
+				{
+				
+					List<WebElement> cellvalue=driver.findElements(By.xpath("//table[@id=\"table1\"]/tbody/tr["+j+"]/child::td["+i+"]"));
+					
+					if(cellvalue.equals("jdoe@hotmail.com"))
+					{
+						rownum=j;
+						System.out.println(rownum);
+					}
+					
+					
+				}
+				if(rownum>0)
+				{
+				break;	
+				}
+			}
+
+	}
+
+}

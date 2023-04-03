@@ -1,0 +1,23 @@
+package StringHandling;
+
+public class Recursion 
+{
+
+	public static void main(String []args)
+	{
+		
+		findFact();
+	}
+	public static int findFact()
+	{
+		int i=1;
+		int n=50;
+		
+		if(i<=50)
+		{
+		findFact((n%i)=0);
+		return i;
+		}
+		
+	}
+}

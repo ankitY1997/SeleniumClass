@@ -1,0 +1,73 @@
+package Assignment;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class Assignment3 extends BasePage {
+	
+	
+	
+	// private WebDriver driver;
+	   @Test
+	    public void verify() throws InterruptedException
+	    {
+
+	        openBrowser("Edge");
+	        openUrl("https://maqdoomec.github.io/login.html");
+
+	        driver.findElement(By.xpath("//input[@id='usernametxt']")).sendKeys("test");
+	        driver.findElement(By.xpath("//input[@id='passwordtxt']")).sendKeys("test");
+	        driver.findElement(By.xpath("//button[@onclick=\"checkLogin();\"]")).click();
+	        
+	        String input="vm";
+	        driver.findElement(By.xpath("//input[@id='searchTerm']")).sendKeys(input);
+	   WebElement search= driver.findElement(By.xpath("//textarea[@id='searchContent']"));
+	   search.sendKeys("vvvvmvmzvvvvmzvmsk");
+	   String finalresult=search.getAttribute("value");
+	   System.out.println(finalresult);
+	  
+	  int index=0;
+	  Integer count=0;
+	  int i=0;
+	while(i!=-1)
+	{
+		 index=finalresult.indexOf(input,i);
+		 //System.out.println(index);
+		 if(index==-1)
+		 {
+			 break;
+		 }
+		 i=index+1;
+		 //System.out.println("my i value is =>"+i);
+		 count++;
+	}
+	  
+	System.out.println("my input is match only :"+count+" time");
+	
+	String expectedvalue=Integer.toString(count);
+	  
+	  
+	
+	   driver.findElement(By.xpath("//button[@type='button']")).click();
+	String actualvalue= driver.findElement(By.xpath("//div[@class=\"w3-container w3-light-grey w3-text-brown popupResultMessage\"]/p")).getText();
+	
+	 if(actualvalue.contains(expectedvalue))
+	 {
+		 System.out.println("test is passed");
+	 }
+	 else
+	 {
+		 System.out.println("test is failed");
+	 }
+	//driver.quit();
+	   
+	    }
+
+  
+
+}

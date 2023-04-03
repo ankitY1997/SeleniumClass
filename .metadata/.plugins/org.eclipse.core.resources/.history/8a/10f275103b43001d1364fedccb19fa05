@@ -1,0 +1,19 @@
+package methodOverLoading;
+
+public class Shoes1 
+{
+public static void main(String []args)
+{
+	main("gold star","black",8,300);
+}
+public static void main(String n,String c,int size,int p)
+{
+	if((n=="gold star")&&((c=="white")||(c=="black"))&&(size==8)&&(p==300))
+	{
+		if(c=="black")
+		{
+		System.out.println("model name=123456");
+		}
+	}
+}
+}

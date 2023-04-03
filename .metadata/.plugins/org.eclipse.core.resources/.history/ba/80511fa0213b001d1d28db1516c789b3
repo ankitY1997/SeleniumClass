@@ -1,0 +1,11 @@
+package Static_Method;
+
+public class Global_local_Driver 
+{
+	public static void main(String[]args) 
+	{
+		Globlal_and_local.i=40;
+		System.out.println(Globlal_and_local.i);
+		
+	}
+}

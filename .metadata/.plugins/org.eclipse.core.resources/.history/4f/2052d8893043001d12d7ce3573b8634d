@@ -1,0 +1,184 @@
+package methodOverLoading;
+
+public class Shoes 
+{//practice
+	static  int p;
+public static void goldstarShoes(String n,String c,int size,int p,String v)
+{
+	
+	if( (n=="Gold star")&&((c=="black")||(c=="white"))&&(size>=5)&&(p>=250)&&(v=="school shoes"))
+			{
+			
+			if((c=="black")&&(size==6)&&(p==250))
+					{
+				System.out.println("model name 45678"+"price :"+p );
+				Shoes.p=p;
+					}
+			else if((c=="black")&&(size==7)&&(p==350))
+			{
+		System.out.println("model name 45679"+"price :"+p );
+				Shoes.p=p;
+			}
+			else if((c=="black")&&(size==8)&&(p==350))
+			{
+		System.out.println("model name- 45680"+"price :"+p );
+				Shoes.p=p;
+			}
+			else if((c=="black")&&(size==9)&&(p==450))
+			{
+		System.out.println("model name 45681"+"price :"+p );
+				Shoes.p=p;
+			}
+			else if((c=="black")&&(size==10)&&(p==450))
+			{
+		System.out.println("model name 45682"+"price :"+p );
+				Shoes.p=p;
+			}
+			else if((c=="white")&&(size==6)&&(p==300))
+			{
+			System.out.println("model name-42265 "+"price :"+p);
+			Shoes.p=p;
+			}
+			else if((c=="white")&&(size==7)&&(p==350))
+			{
+			System.out.println("model name-42266 "+"price :"+p);
+			Shoes.p=p;
+			}
+			else if((c=="white")&&(size==8)&&(p==400))
+			{
+			System.out.println("model name-42267 "+"price :"+p);
+			Shoes.p=p;
+			}
+			else if((c=="white")&&(size==9)&&(p==450))
+			{
+			System.out.println("model name-42268 "+"price :"+p);
+			Shoes.p=p;
+			}
+			else if((c=="white")&&(size==9)&&(p==500))
+			{
+			System.out.println("model name-42269 "+"price :"+p);
+			Shoes.p=p;
+			}
+			else if((c=="white")&&(size==10)&&(p==550))
+			{
+			System.out.println("model name-42267 "+"price :"+p);
+			Shoes.p=p;
+			}
+			
+			}
+	if( (n=="Gold star")&&((c=="black")||(c=="white")||(c=="grey")||(c=="blue"))&&(size>=5)&&(p>=350)&&(v=="sports shoes"))
+	{
+		if((c=="black")&&(size==6)&&(p==350))
+		{
+	System.out.println("model name-20214"+"price :"+p );
+	Shoes.p=p;
+		}
+else if((c=="black")&&(size==7)&&(p==400))
+{
+System.out.println("model name-20215"+"price :"+p );
+	Shoes.p=p;
+}
+else if((c=="black")&&(size==8)&&(p==450))
+{
+System.out.println("model name-20216"+"price :"+p );
+	Shoes.p=p;
+}
+else if((c=="black")&&(size==9)&&(p==500))
+{
+System.out.println("model name-20217"+"price :"+p );
+	Shoes.p=p;
+}
+else if((c=="black")&&(size==10)&&(p==550))
+{
+System.out.println("model name-20217"+"price :"+p );
+	Shoes.p=p;
+}
+else if((c=="white")&&(size==6)&&(p==400))
+{
+System.out.println("model name-42265 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="white")&&(size==7)&&(p==450))
+{
+System.out.println("model name-42266 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="white")&&(size==8)&&(p==400))
+{
+System.out.println("model name-42267 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="white")&&(size==9)&&(p==450))
+{
+System.out.println("model name-42268 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="white")&&(size==9)&&(p==500))
+{
+System.out.println("model name-42269 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="white")&&(size==10)&&(p==550))
+{
+System.out.println("model name-42270"+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="grey")&&(size==6)&&(p==450))
+		{
+	System.out.println("model name-20205"+"price :"+p );
+	Shoes.p=p;
+		}
+else if((c=="grey")&&(size==7)&&(p==450))
+{
+System.out.println("model name-20206"+"price :"+p );
+	Shoes.p=p;
+}
+else if((c=="grey")&&(size==8)&&(p==450))
+{
+System.out.println("model name-20207"+"price :"+p );
+	Shoes.p=p;
+}
+else if((c=="grey")&&(size==9)&&(p==500))
+{
+System.out.println("model name-20208"+"price :"+p );
+	Shoes.p=p;
+}
+else if((c=="grey")&&(size==10)&&(p==550))
+{
+System.out.println("model name-20209"+"price :"+p );
+	Shoes.p=p;
+}
+else if((c=="grey")&&(size==6)&&(p==400))
+{
+System.out.println("model name-42205 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="blue")&&(size==7)&&(p==450))
+{
+System.out.println("model name-42206 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="blue")&&(size==8)&&(p==450))
+{
+System.out.println("model name-42207 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="blue")&&(size==9)&&(p==400))
+{
+System.out.println("model name-42208 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="blue")&&(size==9)&&(p==500))
+{
+System.out.println("model name-42209 "+"price :"+p);
+Shoes.p=p;
+}
+else if((c=="blue")&&(size==10)&&(p==550))
+{
+System.out.println("model name-42210"+"price :"+p);
+Shoes.p=p;
+	
+}
+}
+}
+}

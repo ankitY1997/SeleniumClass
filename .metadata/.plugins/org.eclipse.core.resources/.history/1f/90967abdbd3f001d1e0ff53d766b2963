@@ -1,0 +1,10 @@
+package constructorChaining;
+
+public class EmployDriver 
+{
+public static void main(String []args)
+{
+	Employ m=new Employ("ankit","4160cdef",24,50000);
+	m.display();
+}
+}

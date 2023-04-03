@@ -1,0 +1,39 @@
+package SearchBar;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class AutomaticDropdown1 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.facebook.com/");
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys("9340256458");
+		
+		driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("ankit@123");
+		//Thread.sleep(5000);
+		driver.findElement(By.xpath("//button[@name=\"login\"]")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//input[@placeholder=\"Search Facebook\"]")).sendKeys("girish");
+		
+		List<WebElement> name=driver.findElements(By.xpath("//div/child::ul/child::li"));
+		
+		
+		for(int i=0;i<name.size();i++)
+		{
+			String x=name.get(i).getText();
+			System.out.println(x);
+		}
+	}
+
+}

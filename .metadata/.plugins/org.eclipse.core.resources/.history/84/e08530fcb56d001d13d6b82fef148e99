@@ -1,0 +1,34 @@
+package ExceptionHandling;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Program2 
+{
+/* now we will see  the throws keyword so throws keyword is used to a throw a exception
+ * 
+ * this is another way to handle the exception e
+ * 
+ * syntax=> public static void main() throws IOException ,IndexOutOfBoundException
+ * 
+ * so lets we see
+ * 
+	
+	
+	*/
+	
+	public static  void main(String [] args) throws IOException
+	{
+		
+		File e=new File("D:\\bhumi.txt");
+		
+		if(!(e.exists()))
+		{
+			e.createNewFile();
+			System.out.println("file is created ");
+		}
+		
+		
+		
+	}
+}

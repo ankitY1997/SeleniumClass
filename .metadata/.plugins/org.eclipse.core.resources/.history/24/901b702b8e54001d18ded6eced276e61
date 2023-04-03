@@ -1,0 +1,20 @@
+package ExceptionHandling;
+
+public class Program1 
+{
+//using try catch block
+	public static void main(String[] args)
+	{
+		int a=50,b=0,c;
+		try
+		{
+		c=a/b;
+		System.out.println(c);
+		}
+		catch(Exception ae)
+		{
+			System.out.println(ae);
+		}
+		
+	}
+}

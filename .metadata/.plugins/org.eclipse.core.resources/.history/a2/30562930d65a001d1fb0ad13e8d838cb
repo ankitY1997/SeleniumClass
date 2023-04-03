@@ -1,0 +1,31 @@
+package com.intro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Whatsapp1 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
+		driver.get("https://web.whatsapp.com/");
+		
+		Thread.sleep(50000);
+		
+		WebElement sendmes=driver.findElement(By.xpath("//div[@title='Search input textbox']"));
+		sendmes.sendKeys("girish dubey");
+		//sendmes.click();
+		
+		driver.findElement(By.xpath("//div[@class='g0rxnol2']")).sendKeys("hiii");
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,60 @@
+package Com.Appname.Tests;
+
+import java.time.Duration;
+import java.util.function.Function;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import Com.Appname.Basepage.Base;
+
+public class LogInTest extends Base
+{
+
+	
+	
+
+
+	@Test(priority=1)
+	public void logIn() throws Exception
+	{
+		openBrowser("edge");
+		openUrl("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		Thread.sleep(5000);
+	  WebDriverWait wt=new WebDriverWait(driver,Duration.ofSeconds(10));
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
+		
+		driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("admin123");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
+	}
+	
+	@Test(priority=2)
+
+	public void job() throws Exception
+	{
+		logIn();
+
+		Thread.sleep(5000);
+		WebElement admin=driver.findElement(By.xpath("//span[text()='Admin']"));
+		//wt.until(ExpectedConditions.visibilityOf(admin));
+		admin.click();
+		Thread.sleep(5000);
+	 // driver.findElement(By.xpath("//ul[@class=\"oxd-topbar-body-nav-tab-item\"]/li[2]")).click();
+	  
+		WebElement clickJob=driver.findElement(By.xpath("//span[text()='Job ']"));
+		Actions act=new Actions(driver);
+		act.moveToElement(clickJob).click(clickJob).build().perform();
+		
+		WebElement addJob=driver.findElement(By.xpath("//a[text()='Job Titles']"));
+		act.moveToElement(addJob).click().build().perform();
+	  
+	}
+	
+	
+}

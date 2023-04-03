@@ -1,0 +1,6 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²¼Ñö
+]
+java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(È÷
+P
+java:S2479":Remove the non-escaped \u0009 character from this literal.(Ğ–¤

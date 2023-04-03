@@ -1,0 +1,56 @@
+package methodOverLoading;
+import java.util.Scanner;
+public class Method_over_3 
+{
+	//this the example of one class has a multiple main method but you need to remember method parameter will not be same if its same than method overloading will not be there
+	//and jvm always read first main(String []args)method
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		
+	}
+	public static void main(int a)
+	{
+		System.out.println(a/1);
+	}
+	public static void main(int a,int b,int c)
+	{
+		System.out.println((a+b)/c);
+	}
+	public static void main(double a,double b,int c)
+	{
+		System.out.println((a*b)/c);
+	}
+	public static void main(int a,int b,int d,int c)
+	{
+		System.out.println((a+b+d)/c);
+	}
+	public static void main(double a,double b,double d,int c)
+	{
+		System.out.println((a+b+d)/c);
+	}
+	public static void main(int a,int b,int e,int d,int c)
+	{
+		System.out.println((a*b*e*d)/c);
+	}
+	public static void main(double a,double b,double e,double d,int c)
+	{
+		System.out.println((a*b*e*d)/c);
+	}
+	
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

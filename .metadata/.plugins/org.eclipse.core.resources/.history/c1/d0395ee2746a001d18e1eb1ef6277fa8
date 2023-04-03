@@ -1,0 +1,9 @@
+package Practice1;
+
+public class DieselCar1 extends ElectricCar
+{
+
+	
+
+	
+}

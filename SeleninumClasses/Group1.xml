@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Uat">
+	<groups>
+
+		<run>
+			<include name="smoke"></include>
+			<exclude name="windows.*"></exclude>
+			<include name="unit"></include>
+			<include name="sanity"></include>
+			<exclude name="ios.*"></exclude>
+		</run>
+	</groups>
+	<test name="stagging">
+
+
+		<classes>
+			<class name="com.groups.Test1" />
+			<class name="com.groups.NewTest2" />
+		</classes>
+	</test>
+
+
+	<!-- <test name="production">
+
+		
+		<classes>
+			<class name="com.groups.NewTest2"></class>
+			<class name="com.groups.Test1"></class>
+		</classes>
+
+	</test>-->
+
+</suite> 

@@ -1,0 +1,20 @@
+package com.intro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WebElement1 {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+	   System.setProperty("webdriver.chrome.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.msedge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		WebDriver driver1=new ChromeDriver();
+		driver1.get("https://hi-in.facebook.com/");
+		WebElement1 se = (WebElement1) driver1.findElement(By.linkText("English (UK)"));
+			se.click();
+	}
+
+}

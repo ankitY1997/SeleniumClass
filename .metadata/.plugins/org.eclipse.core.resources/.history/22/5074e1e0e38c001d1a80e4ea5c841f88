@@ -1,0 +1,59 @@
+package com.webElementMethods;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.idealized.Javascript;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class SendKeys extends BasePage {
+	
+	
+/*send keys =>sendKeys is a method which is used to send a text in the form of string and also
+we can perform many opertion like  */
+//by using key class=>Key has a many staic method so we can do lets see how we can do
+	
+/*Keys.control,"a"=>you can perform select operation
+ * Keys.control,"c"=>copy operation
+ * Keys.control,"v"=>paste operation
+ * 	
+ */
+	
+	@BeforeSuite
+	
+	public void main()
+	{
+		System.out.println("before suit");
+	}
+
+	@BeforeClass
+	public void main1()
+	{
+		System.out.println("before class");
+	}
+   
+	@BeforeGroups
+	public void main2()
+	{
+		System.out.println("before test");
+	}
+	
+	@BeforeMethod 
+	public void main3()
+	{
+		System.out.println("before method");
+	}
+	@Test
+	public void main4()
+	{
+		System.out.println("test");
+	}
+	
+}

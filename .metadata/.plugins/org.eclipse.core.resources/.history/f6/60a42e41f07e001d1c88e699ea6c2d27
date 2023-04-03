@@ -1,0 +1,22 @@
+package com.inetBankin.testCases;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+public class Log {
+
+	 static Logger log=LogManager.getLogger(Log.class);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 String log4jfilepath=System.getProperty("user.dir")+"/log4j.properties";
+		
+		 PropertyConfigurator.configure(log4jfilepath);
+		 log.trace("this is trace method ");
+		log.info("hello");
+		
+	
+
+	}
+
+}

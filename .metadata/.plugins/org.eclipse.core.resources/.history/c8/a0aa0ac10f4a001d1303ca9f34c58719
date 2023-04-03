@@ -1,0 +1,20 @@
+package StringHandling;
+
+public class Duplicate 
+{
+public static void main(String []args)
+{
+	String s="hello world ankit";
+	
+	for(int i=0;i<s.length()-1;i++)
+	{
+		char a=s.charAt(i);
+		System.out.println(a);
+	//	if(s==a)
+		{
+			
+		}
+		
+	}
+}
+}

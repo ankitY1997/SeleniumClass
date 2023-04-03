@@ -1,0 +1,30 @@
+package abstraction;
+
+public class UltratechCement implements ADITYABIRLA
+{
+public void employe()
+{
+	
+}
+	
+	public void Salary()
+	{
+		
+	}
+	
+	public void home()
+	{
+		this.Salary();
+		
+	}
+	
+	public void electricity()
+	{
+		this.home();
+	}
+	public static void main(String []args)
+	{
+		UltratechCement cc=new UltratechCement();
+	}
+	
+}

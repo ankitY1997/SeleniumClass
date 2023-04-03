@@ -1,0 +1,92 @@
+package MultipleTab;
+
+import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+	
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		driver.get("https://www.facebook.com/");
+		String fbtitle=driver.getTitle();
+		
+		driver.switchTo().newWindow(WindowType.TAB);
+		
+		driver.get("https://www.instagram.com/");
+		
+		String instatitle=driver.getTitle();
+		
+		
+		driver.switchTo().newWindow(WindowType.TAB);
+		
+		driver.get("https://paytm.com/");
+		String gmailTitle =driver.getTitle();
+		
+	Set<String> window=driver.getWindowHandles();
+	
+	Iterator<String> it=window.iterator();
+	
+	String parent=it.next();
+	
+	String child=it.next();
+	
+	String sub_child=it.next();
+	
+	//instagram
+	
+	driver.switchTo().window(child);
+	
+	driver.findElement(By.xpath("//input[@aria-label=\"Phone number, username, or email\"]")).sendKeys("9340256458");
+	driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("ankit@123");
+        driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+       
+        //for facebook
+        
+	driver.switchTo().window(parent);
+	
+	WebElement  fb=driver.findElement(By.xpath("//input[@placeholder=\"Email address or phone number\"]"));
+	fb.sendKeys("9340256458");
+	
+	WebElement fbpwd=driver.findElement(By.xpath("//input[@aria-label=\"Password\"]"));
+	fbpwd.sendKeys("ankit@123");
+	
+	driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+	
+		
+	
+	//for gmail
+	driver.switchTo().window(sub_child);
+	
+	WebElement paytm=driver.findElement(By.xpath("//span[text()=\"Sign In\"]"));
+	paytm.click();
+	
+	WebElement frame=driver.findElement(By.xpath("//iframe[@src=\"/v1/api/login?isIframe=true&theme=paytm-web\"]"));
+	wait.until(ExpectedConditions.visibilityOf(frame));
+	driver.switchTo().frame(frame);
+	
+	driver.switchTo().defaultContent();
+	
+	WebElement close=driver.findElement(By.xpath("//a[@title=\"Close\"]"));
+	
+	close.click();
+	
+	
+	
+     
+	
+	}
+
+}

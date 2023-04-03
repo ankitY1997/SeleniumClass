@@ -1,0 +1,45 @@
+package OpenBrowser;
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Program1 {
+
+	public static void main(String[] args) throws Exception {
+	
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+		
+		
+		driver.get("https://www.facebook.com/");
+		
+		Thread.sleep(5000);
+		
+		driver.get("https://www.instagram.com/");
+		//driver.get("https://www.instagram.com/");
+		
+
+	Set<String> window=driver.getWindowHandles();
+	
+			int num=window.size();
+	
+	System.out.println(num);
+	
+	
+		/*WebElement  login=driver.findElement(By.xpath("//input[@placeholder=\"Email address or phone number\"]"));
+		login.sendKeys("9340256458");
+		
+		WebElement pwd=driver.findElement(By.xpath("//input[@aria-label=\"Password\"]"));
+		pwd.sendKeys("ankit@123");
+		
+		driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();*/
+		
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package StringHandling;
+
+public class Recursion 
+{
+static int i=0;
+	public static void main(String []args)
+	{
+		
+	fact();
+	}
+	
+	public static int fact()
+	{
+		fact();
+	
+	}
+}

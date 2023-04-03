@@ -1,0 +1,42 @@
+package Action_class;
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+
+public class Program1 {
+/*basically here we can see the usage of action class supposed if you wan to perform some 
+ * speccific task throw a keyboard so we can use action class 
+ */
+	public static void main(String[] args) throws Exception 
+	{
+	
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+	
+	WebDriver driver=new EdgeDriver();
+	
+	driver.get("https://www.flipkart.com/");
+	Actions act=new Actions(driver);
+	Thread.sleep(5000);
+	driver.findElement(By.xpath("//button[@class=\"_2KpZ6l _2doB4z\"]")).click();
+	WebElement fashion=driver.findElement(By.xpath("//div[text()=\"Fashion\"]"));
+	
+		act.moveToElement(fashion).build().perform();
+	WebElement bags=driver.findElement(By.xpath("//div[@class=\"_3XS_gI _7qr1OC\"]/a[8]"));
+	act.moveToElement(bags).build().perform();
+		//act.doubleClick().build().perform();
+	WebElement suit=driver.findElement(By.xpath("//div[@class=\"_3XS_gI\"]/a[1]"));
+			
+	act.moveToElement(suit).build().perform();
+	
+	//act.doubleClick(suit).build().perform();
+	
+
+	}
+
+}

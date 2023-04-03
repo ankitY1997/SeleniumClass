@@ -1,0 +1,14 @@
+<suit>
+     <test> name="ignore"
+       
+       <classes>
+             <class> name="Annotation.IgnoreAnnotation" </class>
+             <methods>
+             <include>
+             name="test" 
+             </include>
+             </methods>
+       </classes>
+
+     </test>
+</suit>

@@ -1,0 +1,82 @@
+package DriverInterFaceOperation;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class GetWindowhandles extends BasePage{
+
+	
+	@Test
+	public void getWindow()
+	{
+		System.setProperty("webdriver.edge.driver","./Driver/msedgedriver.exe")	;
+		
+		 driver=new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com");
+		//now if you want to know what is the id of this browser soo we can use getWindowhandle 
+		//method and its return type is string 
+		
+		String parentid=driver.getWindowHandle();
+	
+		
+		//getWindow()=>method is used to findout the single browser adress
+				//System.out.println("the first window id is :=>"+windowid);
+				
+				
+			//	driver.manage().window().;
+				
+				driver.switchTo().newWindow(WindowType.TAB);
+				
+				driver.get("https://www.instagram.com");
+			
+				//get window hanldes()=> is used to find multiple tab address
+				Set<String> window=driver.getWindowHandles();
+				
+			/*System.out.println(window);
+			
+			
+			Iterator<String> it=window.iterator();
+			
+			
+			String parent=it.next();
+			String child=it.next();
+			
+			driver.switchTo().window(child);
+			
+			driver.close();*/
+				
+			for(String e:window)
+			{
+				driver.switchTo().window(parentid);
+				
+				if((e.equals(parentid)))
+				{
+					driver.switchTo().window(e);
+					String name=driver.getTitle();
+					System.out.println(name);
+					
+					driver.close();
+				}
+				else if(e.equals(e))
+				{
+					
+					
+				
+				}
+			}
+				
+				
+				
+				
+							
+	}
+	
+}

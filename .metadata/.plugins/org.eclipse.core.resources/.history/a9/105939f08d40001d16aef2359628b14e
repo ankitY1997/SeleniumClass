@@ -1,0 +1,74 @@
+package methodOverLoading;
+import java.util.Scanner;
+public class Metod_over1 
+{
+		/*method over loading:-method over loading when we have multiple method with same
+		 * method name so we can achieved by  its parameter will be change or sequence of parameter will be change
+		 * or data type of parameter will be change 
+		 * one class has a multiple main method but remember one thing its argument of parameter will be change.so we can achieved other wise compiler will give an error
+		 * method over loading does not depends on access modifier like (public ,private) or also non access modifier like (Static or non static )and also return type no matter is void
+		 * or int ,String,its only depends on method signature like(sum(int a,int b) 
+		 * but jvm always read which main method that method signature has (String []args) 
+		 * it helps we can decrease the complexity of program and also we can easily execute the program
+		 * So lets see now we are making sum  program.Ok
+		 */
+		
+		public static void main(String []args)
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("enter the  first number");
+			long a=sc.nextLong();
+			System.out.println("enter the  second number");
+			long b=sc.nextLong();
+			System.out.println("enter the third number");
+			long c=sc.nextLong();
+			System.out.println("enter the fourth number");
+			long d=sc.nextLong();
+			
+			if((a!=0)&&(b==0)&&(c==0)&&(d==0))
+					{
+				sum(a);
+					}
+			else if((a!=0)&&(b!=0)&&(c==0)&&(d==0))
+			{
+			sum(a,b);	
+			}
+			else if((a!=0)&&(b!=0)&&(c!=0)&&(d==0))
+			{
+				sum(a,b,c);
+			}
+			else if((a!=0)&&(b!=0)&&(c!=0)&&(d!=0))
+			{
+				sum(a,b,c,d);
+			}
+			else
+			{
+				System.out.println("default");
+			}
+			
+		}
+		public static long sum(long a)
+		{
+			System.out.println("this is the first long block :"+a);
+			return a;
+			
+		}
+		public static long sum(long a,long b)
+		{
+			System.out.println("this is the second sum method where we can use long :"+a+ "long"+b+"and the sum of :"+(a+b));
+			return a+b;
+			
+		}
+		public static long sum(long a,long b,long c)
+		{
+			System.out.println("this is the third  sum method where we can use long :"+a+ "long"+b+"long"+c+"and the sum of :"+(a+b+c));
+			return a+b+c;
+		}
+		public static long sum(long a ,long b,long c,long d)
+		{
+			System.out.println("this is the fourth  sum method where we can use long :"+a+ "long"+b+"long"+c+"and the sum of four number :"+(a+b+c+d));	
+			return a+b+c+d;
+		}
+		
+	}
+

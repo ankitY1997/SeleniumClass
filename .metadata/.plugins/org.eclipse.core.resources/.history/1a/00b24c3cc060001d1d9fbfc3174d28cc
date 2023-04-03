@@ -1,0 +1,47 @@
+package Iframe;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class program1 {
+
+	public static void main(String[] args) throws Exception {
+//lets see how to handle i frame 
+		/*so basically what is i frame -supposed if there is one window and that window we have multiple frame or we can say multiple i frame so questions
+		is how we can know is there is i frame or not so first we have to click on inspect button  and and put (//iframe).so if i frame is there so we get output if its not that means i frame is not there .
+		 
+		if i frame is there and you can use this i frame so first we can take x apth of i frame and then you have one method switch to i frame .
+		lets see how we can do 
+		*/
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+		driver.get("https://the-internet.herokuapp.com/iframe");
+		//now we can reach the web page 
+		//now we have to find i frame is there or not 
+		
+		WebElement frame=driver.findElement(By.xpath("//iframe[@id=\"mce_0_ifr\"]"));
+		driver.switchTo().frame(frame);
+		
+	WebElement frame1=driver.findElement(By.xpath("//body[@id=\"tinymce\"]"));
+	
+	frame1.clear();
+	frame1.sendKeys("i am ankit");
+	Thread.sleep(5000);
+	
+	driver.switchTo().parentFrame();
+	
+	String name=driver.getTitle();
+	
+	System.out.println(name);
+	
+		
+		
+		
+
+	}
+
+}

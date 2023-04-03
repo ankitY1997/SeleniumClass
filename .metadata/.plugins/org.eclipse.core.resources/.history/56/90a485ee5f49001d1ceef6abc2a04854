@@ -1,0 +1,12 @@
+package StringHandling;
+
+public class Assignment2 
+{
+String s="hello world";
+int length1=s.length();
+
+for(int i=length1;i<0;i--)
+{
+	System.out.println(s.charAt(i));
+}
+}

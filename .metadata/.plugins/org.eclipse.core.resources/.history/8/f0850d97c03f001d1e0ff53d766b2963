@@ -1,0 +1,48 @@
+package constructorChaining;
+
+public class Employ 
+{
+	String name;
+	String  emp_id;
+	int age;
+	double salary;
+	//this() 
+	Employ()
+	{
+		System.out.println("company name :"+"Tcs");
+	}
+	Employ(String name)
+	{
+		this();
+		this.name=name;
+	System.out.println("here we can initialize only Employe name ");	
+	}
+	Employ(String name,String emp_id)
+	{
+		
+		this(name);
+		this.emp_id=emp_id;
+		
+	}
+	Employ(String name,String emp_id,int age)
+	{
+		this(name,emp_id);
+		this.age=age;
+		
+
+		
+	}
+	Employ(String name,String emp_id,int age,double salary)
+	{
+		this(name,emp_id,age);
+		this.salary=salary;
+	}
+	public  void display()
+	{
+		System.out.println("this is the employe name :"+name);
+		System.out.println("this is the employe id  :"+emp_id);
+		System.out.println("this is the employe age :"+age);
+		System.out.println("this is the employe salary :"+salary);
+		System.out.println("************************************************");
+	}
+}

@@ -1,0 +1,26 @@
+package Inheritance;
+
+public class Landrover extends Fortuner 
+{
+
+	String name="this is defender";
+	String colour="white";
+	int chais_no=12345747;
+	
+public void display()
+{
+	System.out.println("this is landrover states ");
+	System.out.println(name);
+	System.out.println(colour);
+	System.out.println("=====================");
+	
+	System.out.println("this is toyata class ");
+	
+	
+	
+	
+}
+
+	
+
+}

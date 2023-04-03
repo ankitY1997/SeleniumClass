@@ -1,0 +1,33 @@
+package practice;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Calculator 
+{
+
+	public static void main(String[] args)
+	{
+		
+		
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+	    
+	    driver.get("https://emicalculator.net/");
+	    
+	    List<WebElement> callist=driver.findElements(By.xpath("//*[local-name()='svg']//*[name()='g' and @class='highcharts-series-group']//*[name()='rect']"));
+	    
+	    int num=callist.size();
+	    System.out.println(num);
+	    
+	   //for(int i=0;i<)
+	    
+	}
+	
+}

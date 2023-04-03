@@ -1,0 +1,32 @@
+package com.objectRepository.com;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+
+public class BasePage {
+	
+	WebDriver driver;
+	
+	BasePage(WebDriver  driver){
+		
+		this.driver=driver;
+		
+		
+		
+	}
+			@FindBy(xpath="//input[@name=\"q\"]")
+			public  WebElement searchbox;
+			
+		
+			public void searchBox()
+			{
+				driver.findElement(By.xpath(searchbox));
+				
+			}
+			
+
+
+}

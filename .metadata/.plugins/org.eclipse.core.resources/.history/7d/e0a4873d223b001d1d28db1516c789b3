@@ -1,0 +1,12 @@
+package Static_Method;
+
+public class Global_local_Driver 
+{
+	static int m=Globlal_and_local.ankit();
+	public static void main(String[]args) 
+	{
+		System.out.println(Globlal_and_local.i);//20
+		System.out.println(m);
+		
+	}
+}

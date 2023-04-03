@@ -1,0 +1,152 @@
+package methodOverLoading;
+import java.util.Scanner;
+public class Method_over_3 
+{
+	//this the example of one class has a multiple main method but you need to remember method parameter will not be same if its same than method overloading will not be there
+	//and jvm always read first main(String []args)method
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the opertion");
+		char opt=sc.next().charAt(0);
+		
+		if(opt=='/')
+		{
+			System.out.println("enter the first number");
+			double a=sc.nextDouble();
+			System.out.println("enter the second number");
+			double b=sc.nextDouble();
+			System.out.println("enter the third number");
+			double d=sc.nextDouble();
+			System.out.println("enter the fourth number");
+			double e=sc.nextDouble();
+			System.out.println("enter the denominator number");
+			int  c=sc.nextInt();
+			System.out.println("enter the operator for divide block");
+			char o=sc.next().charAt(0);
+			
+			System.out.println("this is dividing block");
+			
+		if(0=='+')
+		{
+			System.out.println("you are perfoming divide operation but you take a operator : "+"+");
+			System.out.println(" ");
+		if((a!=0)&&(b==0)&&(c==0)&&(d==0)&&(e==0))	
+				{
+			main((int)a);
+				}
+		else if((a!=0)&&(b!=0)&&(c!=0)&&(d==0)&&(e==0))
+		{
+			main((int)a,(int)b,c);
+		}
+		else if((a!=0)&&(b!=0)&&(c!=0)&&(d!=0)&&(e==0))
+		{
+			main((int)a,(int)b,c,(int)d);
+		}
+		else if((a!=0)&&(b!=0)&&(c!=0)&&(d!=0)&&(e!=0))
+		{
+			main((int)a,(int)b,c,(int)d,(int)e);
+		}
+	
+		}
+		else
+		{
+			System.out.println("you are perfoming divide operation but you take a operator ");
+			System.out.println(" ");
+		if((a!=0)&&(b==0)&&(c==0)&&(d==0)&&(e==0))	
+			{
+			main((int)a);
+				}
+		else if((a!=0)&&(b!=0)&&(c!=0)&&(d==0)&&(e==0))
+		{
+			main(a,b,c);
+		}
+		else if((a!=0)&&(b!=0)&&(c!=0)&&(d!=0)&&(e==0))
+		{
+			main(a,b,d,c);
+		}
+		else if((a!=0)&&(b!=0)&&(c!=0)&&(d!=0)&&(e!=0))
+		{
+			main(a,b,e,d,c);
+		}	
+		
+		}
+		}
+		if(opt=='+')
+		{
+			System.out.println("enter the first number");
+			 double a=sc.nextDouble();
+			System.out.println("enter the second number");
+			double b=sc.nextDouble();
+			System.out.println("enter the third number");
+			double  d=sc.nextDouble();
+			System.out.println("enter the fourth number");
+			int c=sc.nextInt();
+			System.out.println("this is the sum block");
+			Metod_over1.sum((int)a,(int)b,(int)c,(int)d);
+		}
+		
+		if(opt=='*')
+		{
+			System.out.println("this is the multification block");
+			System.out.println("enter the first number");
+			double a=sc.nextDouble();
+			System.out.println("enter the second number");
+			double b=sc.nextDouble();
+			System.out.println("enter the third number");
+			double c=sc.nextDouble();
+			System.out.println("enter the fourth number");
+			double d=sc.nextDouble();
+			System.out.println("enter the  number");
+			int  e=sc.nextInt();
+			Method_over_2 n=new Method_over_2();
+			n.mul((long)a,(long)b,(long)c,(int)d,(int)e);
+		}
+		
+		
+	}
+	public static void main(int a)
+	{
+		System.out.println(a/1);
+	}
+	public static void main(int a,int b,int c)
+	{
+		System.out.println((a+b)/c);
+	}
+	public static void main(double a,double b,int c)
+	{
+		System.out.println((a*b)/c);
+	}
+	public static void main(int a,int b,int d,int c)
+	{
+		System.out.println((a+b+d)/c);
+	}
+	public static void main(double a,double b,double d,int c)
+	{
+		System.out.println((a*b*d)/c);
+	}
+	public static void main(int a,int b,int e,int d,int c)
+	{
+		System.out.println((a+b+e+d)/c);
+	}
+	public static void main(double a,double b,double e,double d,int c)
+	{
+		System.out.println((a*b*e*d)/c);
+	}
+	
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

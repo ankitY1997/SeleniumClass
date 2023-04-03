@@ -1,0 +1,10 @@
+package AlertHandling;
+
+public class SimpleNotification {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

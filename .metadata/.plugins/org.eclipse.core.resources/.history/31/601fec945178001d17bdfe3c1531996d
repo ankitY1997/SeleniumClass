@@ -1,0 +1,27 @@
+package DriverInterFaceOperation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class GetWindowhandles extends BasePage{
+
+	
+	@Test
+	public void getWindow()
+	{
+		System.setProperty("webdriver.edge.driver","./Driver/msedgedriver.exe")	;
+		
+		 driver=new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com");
+		//now if you want to know what is the id of this browser soo we can use getWindowhandle 
+		//method and its return type is string 
+		
+		String windowid=driver.getWindowHandle();
+	
+				System.out.println("the first window id is :=>"+windowid);
+	}
+}

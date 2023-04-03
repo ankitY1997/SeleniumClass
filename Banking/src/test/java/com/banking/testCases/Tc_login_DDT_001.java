@@ -1,0 +1,111 @@
+package com.banking.testCases;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.banking.pageobjects.LogInPage;
+import com.banking.utilites.*;
+public class Tc_login_DDT_001 extends BaseClass 
+{
+
+	@Test(dataProvider="login")
+	public void logInDdt(String username, String password)
+	{
+	 
+	 LogInPage lp=new LogInPage(driver);
+	 lp.setUserName(username);
+	 logger.info("set username");
+	 lp.setPassward(password);
+	 logger.info("set password");
+	 lp.clickSubmit();
+	 logger.info("click on submit button");
+	 
+	 if(isAlert()==true)
+	 {
+		 driver.switchTo().alert().accept();;
+		 logger.warn("test is failed");
+		 captureScreenShot(driver,"login ddt");
+		 
+		 Assert.assertTrue(false);
+		 
+		 driver.switchTo().defaultContent();
+	 }
+	 else if(isAlert()==false)
+	 {Assert.assertTrue(true);
+		 lp.clickLogOut();
+		 driver.switchTo().alert().accept();
+		 logger.warn("test is passed");
+		//s Assert.assertTrue(true);
+		 driver.switchTo().defaultContent();
+	 }
+
+     
+		
+	}
+	public boolean isAlert()
+	{
+		try {
+		driver.switchTo().alert();
+		
+	
+		
+		return true;
+		}
+		catch(Exception e)
+		{
+			
+			
+			return false;
+		}
+	}
+	
+	
+	
+	
+	@DataProvider(name="login")
+	public String[][] getData() throws IOException
+	{
+	
+		File file =new File("./DataFile/ExcelFile.xlsx");
+		
+		FileInputStream fis=new FileInputStream(file);
+		
+		XSSFWorkbook workbook=new XSSFWorkbook(fis);
+		
+		XSSFSheet sheet=workbook.getSheetAt(0);
+		
+		int rownum=sheet.getLastRowNum();
+		int column=sheet.getRow(0).getLastCellNum();
+		String [][]logindata=new String[rownum][column];
+		
+		for(int i=1;i<=rownum;i++)
+		{
+			XSSFRow row=sheet.getRow(i);
+			 
+			for(int j=0;j<column;j++)
+			{
+				DataFormatter data=new DataFormatter();
+				XSSFCell cell=row.getCell(j);
+				
+				logindata[i-1][j]=data.formatCellValue(cell);
+				 
+			}
+			
+		}
+		return logindata;
+		
+	}
+	
+}

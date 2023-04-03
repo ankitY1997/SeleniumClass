@@ -1,0 +1,18 @@
+package Inheritance;
+
+public class Vechile //parent
+{
+String body="vechile has a body";
+String colour="veichle has some colour";
+String engine="Vechile has a engine ";
+int chasis_no =127849;
+
+public void petrol()
+{
+	System.out.println("veichle required petrol this from parent ");
+}
+public void diesel()
+{
+	System.out.println("viechle is alos required diesel this from parent");
+}
+}

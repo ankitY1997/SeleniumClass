@@ -1,0 +1,69 @@
+package MultipleWindow_Handling;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Program2 {
+
+	public static void main(String[] args) throws InterruptedException {
+	System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+	
+	WebDriver driver=new EdgeDriver();
+	
+	driver.get("https://demoqa.com/browser-windows");
+	
+	WebElement driver1=driver.findElement(By.xpath("//button[text()=\"New Tab\"]"));
+	driver1.click();
+	
+	Set<String> tab=driver.getWindowHandles();
+	
+	Iterator<String> window=tab.iterator();
+	
+	
+	String parent=window.next();
+	String child=window.next();
+	
+	driver.switchTo().window(parent);
+	
+	driver.findElement(By.xpath("//button[@id=\"windowButton\"]")).click();
+	
+	Set<String> newbutton=driver.getWindowHandles();
+	System.out.println(newbutton.size());
+	
+	Iterator<String> it=newbutton.iterator();
+	
+	String parent1=it.next();
+	String child1=it.next();
+	driver.switchTo().window(child1);
+	
+	String x=driver.getTitle();
+	
+	System.out.println(x);
+	
+	driver.switchTo().window(parent1);
+
+	//String y=driver.getTitle();
+	//System.out.println(y);
+	//driver.findElement(By.xpath("//button[@id=\"windowButton\"]")).click();
+	
+	//Thread.sleep(5000);
+
+//		driver.close();	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	}
+
+}

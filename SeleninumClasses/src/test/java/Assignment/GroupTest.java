@@ -1,0 +1,87 @@
+package Assignment;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class GroupTest extends BasePage
+{
+	//@Parameters({"browser","url","username","passward"})
+
+	@Test(groups="smoke",description="log in test case")
+	public void testCase1()
+	{
+		
+		openBrowser("Edge");
+		openUrl("https://www.facebook.com/");
+		
+		driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys("9407149937");
+		driver.findElement(By.xpath("//input[@placeholder=\"Password\"]")).sendKeys("ankit@123");
+		
+		driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+		
+		String expname="HomePage";
+		String actualname=driver.findElement(By.xpath("//img[@alt=\"Facebook\"]")).getText();
+		
+		if(expname.equals(actualname)) {
+			
+			
+			System.out.println("test is passed");
+		}
+		else 
+		{
+			System.out.println("test is failed");
+		}
+		
+		
+		
+		
+		
+	}
+	
+	
+     @Test(groups="smoke",description="verify login test cases")
+	
+	public void testCase2() throws InterruptedException
+	{
+		openBrowser("chrome");
+		openUrl("https://www.instagram.com/");
+		Thread.sleep(2000);
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//input[@aria-label=\"Phone number, username, or email\"]")).sendKeys("9407149937");
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@aria-label=\"Password\"]")).sendKeys("ankit@123");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
+		
+		String expname="HomePage";
+		String actualname=driver.findElement(By.xpath("//i[@aria-label=\"Instagram\"]")).getText();
+		
+		if(expname.equals(actualname))
+		{
+			System.out.println("test is passed");
+		}
+		else
+		{
+			System.out.println("test is failed");
+		}
+		
+	}
+	
+     
+     @AfterTest
+     
+     public void closeConn()
+     {
+    	 driver.quit();
+     }
+	
+}

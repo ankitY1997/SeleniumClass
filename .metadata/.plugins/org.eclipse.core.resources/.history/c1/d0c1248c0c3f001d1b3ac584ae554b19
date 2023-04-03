@@ -1,0 +1,9 @@
+package constructor26sep;
+
+public class EmployDriver 
+{
+public static void main(String []args)
+{
+	Employ n=new Employ("mohan",24,50000);
+}
+}

@@ -1,0 +1,72 @@
+package Wait_class;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+	
+/*now we will se wait how to give a wait and how amny type of wait are available
+ * types of wait :-1
+ * 1: implicit wait 
+ * 2: explicit wait 
+ * 3: Thread.sleep
+ * 
+ * what is the difference:-difference is if you will put Thread.sleep(5000) so it will stop the test 
+ * script for 5 second and it will pause the next script for 5 second
+ * 
+ *  2.and if you will take implicit wait so it will stop the all the step for 5 seconds
+ *  
+ *  3.if you take explicit wait so what it done it will wait only 5 second but supposed your
+ *  web element appeares in 2 second so it will start its execution it cant wait till 5 second. okk
+ *   
+ *   so how to do that 
+ */
+		
+/*System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+	    
+	    
+	driver.get("https://www.flipkart.com/?ef_id=5dbfef35b4901991e4c78c5b937f7937:G:s&s_kwcid=AL!739!10!76484920232329!76485137405439&semcmpid=sem_F1167BY7_Brand_adcenter");
+	
+	WebElement login=driver.findElement(By.xpath("//input[@class=\"_2IX_2- VJZDxU\"]"));
+	System.out.println("1");
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+	
+	wait.until(ExpectedConditions.visibilityOf(login));
+	
+	login.sendKeys("9340256458"); */
+				
+		checkBox();
+
+	}
+
+	public static void checkBox()
+	{
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+	    
+	    driver.get("https://the-internet.herokuapp.com/checkboxes");
+	    
+	    WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+	    
+	    
+	    
+	  
+	    
+	    
+	    	
+	}
+	
+}

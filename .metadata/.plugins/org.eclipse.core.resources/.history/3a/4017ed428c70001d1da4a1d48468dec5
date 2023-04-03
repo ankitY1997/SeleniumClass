@@ -1,0 +1,78 @@
+package com.appname.basepage;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+public class BasePage 
+{
+
+	public WebDriver driver;
+	public ExtentTest test;
+	
+	
+	public BasePage(WebDriver driver, ExtentTest test)
+	{ 
+		this.driver=driver;
+		this.test=test;
+		
+	}
+	public void reusable()
+	{
+		test.log(LogStatus.INFO, "log in to base page ");
+	}
+	public   String screenShot() 
+	{
+		
+		TakesScreenshot ss= (TakesScreenshot)driver;
+		
+		File screenshot=ss.getScreenshotAs(OutputType.FILE);
+		
+		Date d=new Date();
+		System.out.println(d);
+		
+		String strdate=d.toString();
+		System.out.println(strdate);
+		
+		String modifydate=strdate.replace(" ","_").replace(":","_");
+		System.out.println(modifydate);
+		
+		String src="Test_"+modifydate+".jpg";
+		
+	try {
+	FileUtils.copyFile(screenshot,new File(System.getProperty("user.dir")+"//Reports//screenshot/"+src));
+	}
+	catch(Exception e)
+	{
+		e.printStackTrace();
+	}
+		String destination=System.getProperty("user.dir")+"//Reports//screenshot/"+src;
+		
+		return destination;
+	}
+	
+
+	public void elementClick(WebElement element)
+	{
+		
+		try {
+		element.click();
+		
+		test.log(LogStatus.INFO,"this "+element+"is sucessfully click");
+		}
+		catch(Exception e)
+		{
+			test.log(LogStatus.ERROR, e.getMessage());
+		}
+		
+	}
+}

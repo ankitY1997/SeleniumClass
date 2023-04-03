@@ -1,0 +1,26 @@
+package ClassicDropDownList;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class ClassicDropDown {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		EdgeDriver driver=new EdgeDriver();
+		driver.get("https://the-internet.herokuapp.com/");
+		List<WebElement> elmdrop=driver.findElements(By.id("dropdown"));
+		
+		Select dropdown=new Select( (WebElement) elmdrop);
+		dropdown.selectByVisibleText("option1");
+	      
+	      
+	}
+
+}

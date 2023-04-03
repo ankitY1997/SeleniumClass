@@ -1,0 +1,43 @@
+package StringHandling;
+
+public class String1 
+{
+ public static void main(String []args)
+ {
+	 String name="ankit";
+	 String month="october";
+	 String weekday="wednesday";
+	 String name1="ANKIT";
+	 String text="today is monday";
+	 
+	 /*Syntax is :-S.o.p(variable_name.method name());
+	 
+	 
+	 
+	 
+	 /*String is non primitive data because it has a own method*/
+	 //first if you want convert the  Lower string into upper case than you have to use this method*/
+	 System.out.println(name.toLowerCase());//here it convert name variable upper case data into lower  case
+	System.out.println(name.toUpperCase());//here it will will convert all smaller case string into upper case
+	//if you want to know how many characters in string so we have to use method
+	System.out.println(weekday.length());//here it will count character
+	System.out.println(text.length());
+	System.out.println(name1.length());
+	//and if you want to compare one string to another string
+	System.out.println(name.equals(name1));//here result will give false
+	System.out.println(name.equalsIgnoreCase(name1));//here result will give true
+	//if you want to fetch the character so we have to use below method
+	System.out.println(text.charAt(0));//it
+	System.out.println(text.charAt(3));//3
+	//if you want to check weather you check string is present  or not
+	System.out.println(text.contains("monday"));
+	//supposed if you want to check  what character is persent inside these range  so we have to use below method
+	System.out.println(text.substring(1,4));// (o-y)
+	System.out.println(name.substring(1,5)); //(n-
+	//if you are fetching the character after 6 character what are the character is present so we have to use below method
+	System.out.println(name1.substring(2));//(KIT)
+	System.out.println(text.substring(2));//(ay is monday)
+	
+	
+ }
+}

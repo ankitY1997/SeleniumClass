@@ -1,0 +1,14 @@
+package Static_Method;
+
+public class Global_local_Driver 
+{
+	static int m=Globlal_and_local.ankit();//here we intialization static method which is persent inside class block so here we use class name.ankit();//20
+	public static void main(String[]args) 
+	{
+		System.out.println(Globlal_and_local.ankit());//20,0
+		System.out.println(m);//0
+		System.out.println(Globlal_and_local.j);//90
+	
+		
+	}
+}

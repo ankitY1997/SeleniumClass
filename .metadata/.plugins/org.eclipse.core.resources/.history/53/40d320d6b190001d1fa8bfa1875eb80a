@@ -1,0 +1,47 @@
+package Annotation;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.basepage.BasePage;
+
+public class ParameterAnnotation extends BasePage 
+{
+
+	SoftAssert softassert=new SoftAssert();
+	
+	@Parameters({"browser","url"})
+	@Test
+	public void test(@Optional("chrome")String browser,String url)
+	{
+		
+		openBrowser("Edge");
+		openUrl("https:/www.facebook.com/");
+		driver.manage().window().maximize();
+		
+		String expToolTiptxt="Email address or phone number";
+		WebElement username=driver.findElement(By.xpath("//input[@name=\"email\"]"));
+		String actualtooltipTxt=username.getAttribute("placeholder");//in this method we can pass any thing
+		
+		
+		System.out.println(actualtooltipTxt);
+		
+		softassert.assertEquals(actualtooltipTxt,expToolTiptxt," the tool tip txt is failed ");
+		
+		
+		driver.quit();
+		softassert.assertAll();
+		
+		
+	}
+
+	
+	
+	
+	
+	
+}

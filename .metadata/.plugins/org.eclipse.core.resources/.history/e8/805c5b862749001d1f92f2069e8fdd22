@@ -1,0 +1,26 @@
+package StringHandling;
+
+public class StringMethod 
+{
+public static void main(String []args)
+{
+	String name="ankit";
+	String dateofbirth="24 jan 1997";
+	String father_name="kamalakant yadav";
+	String mother_name="indravati devi";
+	String name1="Ankit";
+	
+	//first we will convert in upper case
+	System.out.println(name.toUpperCase());//here it will become ANKIT
+	System.out.println(name1.toLowerCase());//here it will become ankit
+	System.out.println(mother_name.length());//string has 14
+	System.out.println(father_name.length());// if you are talking about string than it will calculate 
+	System.out.println(name.equals(name1));//if you are comparing directly so we can name=name1 here two string are  miss match that time it will give result false
+	
+	
+	//if you want to  check it will only check string not lower case or upper cases  so you have to use 
+	System.out.println(name.equalsIgnoreCase(name1));//so her it will give true
+    //it you want to calculate the character so it will counting always 0
+	System.out.println(mother_name.charAt(12));
+}
+}

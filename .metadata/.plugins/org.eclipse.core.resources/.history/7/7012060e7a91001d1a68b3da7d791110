@@ -1,0 +1,33 @@
+package Collection;
+
+import java.util.*;
+
+public class Program1 {
+	
+	
+//if i am talking about the collection interface so it has provide so many method 
+//lets see one by one how its works
+	
+//first you need to remember one thing in  collection all are value store in the form of object 
+	
+
+//1)add()=>it's method available  in a collection interface its helps we can store the value.
+	
+	
+  public static void main(String[] args) {
+	
+	  //you know we are not able to create instance of any interface.so we can take help of 
+	  //any class.
+	  
+	  Collection c1 =new ArrayList() ;
+	  
+	  c1.add(34);
+	  c1.add("ankit");
+	  
+	  System.out.println(c1);
+           
+}
+	
+
+
+}

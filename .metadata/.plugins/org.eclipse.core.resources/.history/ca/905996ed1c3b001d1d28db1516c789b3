@@ -1,0 +1,28 @@
+package Static_Method;
+
+public class Globlal_and_local 
+{
+/*global variable name persent with  in the form of local variable both are exist in one block
+	but if u put local variable at same name as global varaible so at that time compiler read 
+	local variable first at that time global variable become a hidden.*/
+	static int i=20;
+	int j=40;
+	public static void main(String[]args)
+	{
+		Globlal_and_local n=new Globlal_and_local();
+		int i=40;
+		n.ankit(80);
+		System.out.println(i);//here compiler give local variable perfence //40
+		//now if u want show a global static variable than u use class name.globalvariable name
+		System.out.println(Globlal_and_local.i);//20
+	}
+	public  int ankit(int r)
+	{
+		int c=50;
+		int j=30;
+		j=50;
+		System.out.println("local j :"+j);
+		System.out.println("Global j :"+j);
+		return c;
+	}
+}

@@ -1,0 +1,20 @@
+package Practice1;
+
+public class WaterCar extends ElectricCar
+{
+	String name="xyz";
+	
+	public WaterCar()
+	{
+		System.out.println(this.name);
+		System.out.println(super.name);
+		
+		
+	}
+	
+	public static void main(String [] args)
+	{
+		WaterCar c=new WaterCar();
+	}
+	
+}

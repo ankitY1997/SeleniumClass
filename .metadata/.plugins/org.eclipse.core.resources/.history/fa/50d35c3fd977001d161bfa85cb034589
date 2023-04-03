@@ -1,0 +1,24 @@
+package Assignment1;
+
+public class Program6 
+{
+
+	
+	public static void main(String[] args) {
+		
+		
+		String word="ankiy124356";
+		
+		
+	char name='Z';
+	
+	System.out.println((int)name);
+		/*for(int i=0;i<word.length();i++)
+		{
+			char ch=word.charAt(i);
+			
+			if((ch>=65&&ch<=)
+			
+		}*/
+	}
+}

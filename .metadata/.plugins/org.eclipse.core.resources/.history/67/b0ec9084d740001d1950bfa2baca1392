@@ -1,0 +1,32 @@
+package methodOverLoading;
+import java.util.Scanner;
+public class Method_over_2 
+{
+	public  void mul(int a,int b)
+	{
+	
+	}
+	public void mul(int a,int b)
+	{
+		
+	}
+	public void mul(int x,int y,int z)
+	{
+		
+	}
+	public static void main(String []args)
+	{
+		Method_over_2 m=new Method_over_2();
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter the number");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		int z=sc.nextInt();
+		m.mul(a,b);
+		m.mul(x,y);
+		m.mul(x,y,z);
+		
+	}
+}

@@ -1,0 +1,16 @@
+package BasePage;
+
+public class Parent {
+
+	
+	public void openBrowser()
+	{
+		
+		
+    }
+	public void openUrl()
+	{
+		
+	}
+
+}

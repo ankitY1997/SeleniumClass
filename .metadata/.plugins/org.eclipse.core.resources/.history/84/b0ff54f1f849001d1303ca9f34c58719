@@ -1,0 +1,34 @@
+package StringHandling;
+
+public class _2dArray_18_oct_ 
+{
+public static void main(String[] args)
+{
+	//2D-array means you have two rows and two column
+	
+/*Syntax:-datatyppe [] [] varname=new datatype[][];
+ * 
+ * []-first array is  for rows 
+ * []-second array is for column
+ * 
+ * 
+ */
+	String[][]data=new String[2][2];
+	data[0][0]="first name";
+	data[0][1]="last name";
+	//data[0][2]="address";
+	data[1][0]="sagar";
+	data[2][0]="ankit";
+	//data[]
+	//data[2][0]="vishnu";
+	//data[2][1]="bisla";
+	//data[2][2]="dhonchak";
+	//data[2][1]="parsad";
+	/*data[0][2]="faridabad";
+	data[1][2]="rohini";
+	data[2][2]="ashok nagar";*/
+	
+	System.out.println(data.length);
+	
+}
+}

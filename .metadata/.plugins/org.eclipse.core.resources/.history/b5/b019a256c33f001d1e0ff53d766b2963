@@ -1,0 +1,37 @@
+package constructorChaining;
+
+public class Student 
+{
+String name;
+String date_of_birth;
+int class_name;
+int age;
+
+Student(String name,String date_of_birth,int class_name,int age)
+{
+	this(date_of_birth,class_name,age);
+	this.name=name;
+}
+Student(String date_of_birth,int class_name,int age)
+{
+	this(class_name,age);
+	this.date_of_birth=date_of_birth;
+	
+}
+Student(int class_name,int age)
+{
+	this(age);
+	this.class_name=class_name;
+	
+}
+Student(int age)
+{
+	this();
+	this.age=age;
+}
+Student()
+{
+	System.out.println("ADITYA BIRLA HIGHER SECONDARY SCHOOL");
+	System.out.println("this is the name of student "+this.name);
+}
+}

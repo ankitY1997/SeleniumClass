@@ -1,0 +1,15 @@
+package Static_Method;
+
+public class Globlal_and_local 
+{
+/*global variable name persent with  in the form of local variable both are exist in one block
+	but if u put local variable at same name as global varaible so at that time compiler read 
+	local variable first at that time global variable become a hidden.*/
+	static int i=20;
+	int j=40;
+	public static void main(String[]args)
+	{
+		int i=40;
+		System.out.println(i);
+	}
+}

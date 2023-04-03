@@ -1,0 +1,28 @@
+package constructor26sep;
+
+public class Constructor3 
+{
+	String name;
+	int empId;
+	int age;
+
+public Constructor3(String name,int empId,int age)
+{
+	n.name=name;/*in that case they will give preference local variable so here we want 
+	
+	to assign the value of global variable so we can use (this) keyword
+	*/
+	n.age=age;
+	
+	n.empId=empId;
+}
+public void display()
+{
+System.out.println(name);
+System.out.println(age);
+System.out.println(empId);
+}
+public static void main(String[] args) {
+	Constructor3 n=new Constructor3("mohan",45,65);
+}
+}

@@ -1,0 +1,16 @@
+package constructor26sep;
+
+public class EmployDriver 
+{
+public static void main(String []args)
+{
+	Employ n=new Employ("mohan",24,50000);
+	n.display();
+	System.out.println(Employ.comp_name);
+	Employ m=new Employ("mohan",24,50000);
+	m.age=50; //re initialize
+	m.display();//call a display method throw a reference variable
+	Employ.ankit();
+	
+}
+}

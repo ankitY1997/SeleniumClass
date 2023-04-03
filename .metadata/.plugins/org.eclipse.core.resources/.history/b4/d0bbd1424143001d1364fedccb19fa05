@@ -1,0 +1,23 @@
+package methodOverLoading;
+
+public class Shoes1 
+{
+public static void main(String []args)
+{
+	goldstarShoes("gold star","white",8,300,"school shoes");
+}
+public static void goldstarShoes(String n,String c,int size,int p,String v)
+{
+	if((n=="Gold star")&&(v=="school shoes"))
+	{
+		if(((c=="black")||(c=="white"))&&(size>5)&&(p>=250))
+		{
+			
+		}
+	}
+	else if(v=="sports shoes")
+	{
+		
+	}
+}
+}

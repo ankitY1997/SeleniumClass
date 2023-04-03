@@ -1,0 +1,22 @@
+package ArrayPractice;
+
+public class Question2 
+{
+	//wajp print the elements from array which is didvisble by 4
+public static void main(String []args)
+{
+	int []a= {20,35,40,33,50,67};
+	
+	for(int i=0;i<a.length-1;i++)
+	{
+		int c=a[i];
+		
+		if(c%4==0)
+		{
+			System.out.println(c);
+		}
+	
+	}
+	
+}
+}

@@ -1,0 +1,25 @@
+package ArrayPractice;
+
+public class Question7 
+{
+//wajp to print the array element only if its prime number
+	public static void main(String []args)
+	{
+		int a[]= {20,35,31,13,17};
+		int count=0;
+		for(int i=0,j=1;i<a.length;i++)
+		{
+			
+			int c=a[i];
+			while((c%j==0)&&(j<c/2))
+			{
+			count++;
+			j++;	
+		     }
+			if(count==1)
+			{
+			System.out.println(c);
+			}
+	}
+	}
+}

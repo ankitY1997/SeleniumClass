@@ -1,0 +1,27 @@
+package FileUpload;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class FileUpload {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+		
+		driver.get("https://app.grammarly.com/?network=o&utm_source=bing&matchtype=e&gclid=fe32ce0926351d6c44cfad78d5e1e654&placement=&utm_content=&gclsrc=3p.ds&utm_campaign=brand&msclkid=fe32ce0926351d6c44cfad78d5e1e654&utm_medium=cpc&afterSurvey=recommend&utm_term=grammarly%2B");
+			
+		WebElement upld=driver.findElement(By.xpath("//div[@class=\"_74ee833f-document-item-upload\"]"));
+		
+		//uploading photo there is a method sendkeys
+		
+		upld.sendKeys("D:\\photos\\Camera imports\\photos\\dualipa.jpg");
+		
+	}
+
+}

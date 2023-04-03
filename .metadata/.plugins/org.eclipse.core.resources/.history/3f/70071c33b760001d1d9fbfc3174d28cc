@@ -1,0 +1,37 @@
+package practice;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class GetText {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+	    
+	    driver.get("https://www.facebook.com/");
+	    
+	    WebElement name=driver.findElement(By.xpath("//input[@name=\"email\"]"));
+	    
+	    name.sendKeys("ankit");
+	    
+	    String x=name.getText();
+	    System.out.println(x);
+	    
+	    if(x.equals("ankit"))
+	    {
+	    	System.out.println("text is right");
+	    }
+	    else
+	    {
+	    	System.out.println("text is in correct ");
+	    }
+
+	}
+
+}

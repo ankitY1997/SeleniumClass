@@ -1,0 +1,25 @@
+package StringHandling;
+
+public class Recursion 
+{
+
+	public static void main(String []args)
+	{
+		
+	fact();
+	}
+	
+	public static int fact()
+	{
+	int i=0;
+	i=++i;
+	System.out.println(i);
+	
+	if(i<=50)
+	{
+	fact();
+	}
+	
+	return 0;
+	}
+}

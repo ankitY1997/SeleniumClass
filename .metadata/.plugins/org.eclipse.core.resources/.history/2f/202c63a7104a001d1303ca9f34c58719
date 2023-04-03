@@ -1,0 +1,22 @@
+package StringHandling;
+
+public class Duplicate 
+{
+public static void main(String []args)
+{
+	String s="hello world ankit";
+	
+	for(int i=0, j=s.length();i<s.length()-1;i++,j--)
+	{
+	
+	char c=s.charAt(i);
+	char a=s.charAt(j);
+	if(a==j)
+	{
+		
+	}
+	System.out.println(i);
+		
+	}
+}
+}

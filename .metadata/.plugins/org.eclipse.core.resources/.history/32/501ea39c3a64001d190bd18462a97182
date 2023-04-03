@@ -1,0 +1,81 @@
+package MultipleTab;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+	
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+		
+		driver.get("https://www.facebook.com/");
+		String fbtitle=driver.getTitle();
+		
+		driver.switchTo().newWindow(WindowType.TAB);
+		
+		driver.get("https://www.instagram.com/");
+		
+		String instatitle=driver.getTitle();
+		
+		
+		driver.switchTo().newWindow(WindowType.TAB);
+		
+		driver.get("https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=ARgdvAuzvxqpMGoOSYpBZaCwlb2WEbjCTqh_9ZVuaMEL6kqPItQG14eGqz4OSEswKNyDipVXsx0eyg&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
+		
+		String gmailTitle =driver.getTitle();
+		
+	Set<String> window=driver.getWindowHandles();
+	
+	Iterator<String> it=window.iterator();
+	
+	String parent=it.next();
+	
+	String child=it.next();
+	
+	String sub_child=it.next();
+	
+	//instagram
+	
+	driver.switchTo().window(child);
+	
+	driver.findElement(By.xpath("//input[@aria-label=\"Phone number, username, or email\"]")).sendKeys("9340256458");
+	driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("ankit@123");
+        driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+       
+        //for facebook
+        
+	driver.switchTo().window(parent);
+	
+	WebElement  fb=driver.findElement(By.xpath("//input[@placeholder=\"Email address or phone number\"]"));
+	fb.sendKeys("9340256458");
+	
+	WebElement fbpwd=driver.findElement(By.xpath("//input[@aria-label=\"Password\"]"));
+	fbpwd.sendKeys("ankit@123");
+	
+	driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+	
+		
+	
+	//for gmail
+	driver.switchTo().window(sub_child);
+	
+	driver.findElement(By.xpath("//input[@type=\"email\"]")).sendKeys("ankiteng1997@gmail.com");
+	driver.findElement(By.xpath("//span[text()=\"Next\"]")).click();
+     driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("ankitYadav12");
+     driver.findElement(By.xpath("//span[text()=\"Next\"]")).click();
+     
+	
+     
+	
+	}
+
+}

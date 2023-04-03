@@ -1,0 +1,29 @@
+package constructor26sep;
+
+public class Constructor2 
+{
+	
+	String name;
+	int empid;
+	int age;
+	double salary;
+	public Constructor2(String n,int e,int a,int s )
+	{/*here we easily assign the value of global variable because no local variable
+		Present in same variable name .so that time how will you do that so we can see 
+		next programme in constructor3 */
+		 name=n;
+		empid=e;
+		age=a;
+		salary=s;
+	
+		
+	}
+	public void display()
+	{
+		System.out.println("the employe name is "+name);
+		System.out.println("the employe id is :"+empid);
+		System.out.println("this is employe age :"+age);
+		System.out.println("this is employe age :"+salary);
+	}
+	
+}

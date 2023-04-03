@@ -1,0 +1,90 @@
+package Encapsulation;
+import java .util.*;
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+public class Validation2 
+{
+	private String name;
+	private int  age;
+	public static String pwd="ankit@123";
+	static int count=1;
+	static int count1=1;
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public  void setName(String name)
+	{
+		this.name=name;
+	}
+	public int getAge()
+	{
+		Scanner sc=new Scanner(System.in);
+		while(count1<=3)
+		{
+		System.out.println("enter  forget  password ");
+		//System.out.println("your attempt set age : "+count1);
+		String x=sc.nextLine();
+		
+		   if(x.equals(pwd))
+		     {
+			   count1=4;
+			return age;
+		      }
+	     	else
+		     {
+	     	System.out.println("your"+count1+" st attempt ");
+			count1++;
+			return 0;
+		     }
+		 
+		}
+		if(count1==4)
+		{
+		return age;
+		}
+		else
+		{
+			System.out.println("limit reached ");
+			return 0;
+		}
+	
+	}
+	
+	public  void setAge(int age)
+	{
+		Scanner sc=new Scanner(System.in);
+		while(count<=3)
+		{
+			if(count==1)
+			{
+		System.out.println("enter the password ");
+			}
+			
+		String x=sc.nextLine();
+		if(pwd.equals(x))
+		{	this.age=age;
+			break;
+		}
+		else if(count==3)
+		{
+			System.out.println("limit exist pls be come in after 24 hour");
+			System.out.println("*************************************************");
+		}
+		else
+		{
+			System.out.println(count+" st attempt ");
+			System.out.println("entered wrong passward");
+			System.out.println("--- try again---");
+			
+			
+		}
+		count++;
+		
+		}
+		
+		
+	}
+}

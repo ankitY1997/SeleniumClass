@@ -1,0 +1,26 @@
+package Practice;
+
+public class Program1 {
+
+	public static void main(String[] args) 
+	{
+		
+		String x="anbdgdgdh";
+		int i=0;
+		
+		while( i<=x.length())
+		{
+			char c=x.charAt(i);
+			
+			System.out.println(c);
+			
+			i++;
+
+
+		}
+		
+	}
+	
+	
+
+}

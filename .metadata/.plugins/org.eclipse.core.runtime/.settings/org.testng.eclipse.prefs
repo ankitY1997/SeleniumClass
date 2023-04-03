@@ -1,0 +1,6 @@
+Banking.outdir=test-output
+TestNgFrameWork.disabledListeners=true
+TestNgFrameWork.outdir=test
+TestNgFrameWork.watchResults=true
+TestNgFrameWorkxmlTemplateFile=TestNgxml
+eclipse.preferences.version=1

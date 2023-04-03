@@ -1,0 +1,52 @@
+package practice;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Iframe1 {
+
+	public static void main(String[] args) throws Exception {
+		
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+		driver.get("https://the-internet.herokuapp.com/iframe");
+		
+		WebElement frame=driver.findElement(By.xpath("//iframe"));
+		driver.switchTo().frame(frame);
+		WebElement iframe=driver.findElement(By.xpath("//body[@id=\"tinymce\"]"));
+		//driver.switchTo().frame(iframe);
+		
+		
+		iframe.clear();
+		
+		iframe.sendKeys("hello");
+		
+		driver.switchTo().defaultContent();
+		
+		String tit=driver.getTitle();
+		System.out.println(tit);
+		
+		if(tit.equals("The Internet"))
+		{
+			System.out.println("passed");
+		}
+		
+		paytm();
+	}
+		
+	public static void paytm() throws Exception
+	{
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+		Thread.sleep(5000);
+		driver.get("https://paytm.com/");
+		
+		//Thread.sleep(2000);
+			driver.findElement(By.xpath("//span[text()=\"Log In\"]")).click();
+	
+	}
+}

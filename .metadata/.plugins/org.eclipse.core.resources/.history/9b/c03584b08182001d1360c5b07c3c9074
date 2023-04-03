@@ -1,0 +1,124 @@
+package StringClass;
+
+public class String_Mtehods 
+{
+
+public static void main(String[] args) {
+	method1();
+	
+	System.out.println("**********this is equals method*********** ");
+	method2();
+	System.out.println("*****************************");
+	method3();
+	
+}
+	
+	public static  void method1()
+	{
+		
+		// isEmpty()=> this is the method which is used to findout the string 
+		//is empty or not and gives a result in boolean form
+		//if there is a space so it will count that space.
+		
+		String s="ankit";
+		String s2=" ";
+		String s3="";
+		
+		System.out.println(s.isEmpty());//false
+		System.out.println(s2.isEmpty());//false(there is a space so it will count 
+		System.out.println(s3.isEmpty());//true
+		
+		
+	System.out.println("=====================================");
+	
+	// isBlank()=>is blank method is also check weather string is empty or not but 
+	//there is one difference it doesn't count space but in isEmpty method counts a space also
+	//lets see
+	
+	
+	String s4="ankit";
+	String s5=" ";
+	String s6="";
+	
+	System.out.println(s4.isBlank());//false
+	System.out.println(s5.isBlank());//true //why but there is a space so its also a one string 
+	//yes you are right but is Blank method doesnot count a spaces so here it will
+	//give a result true
+	
+	System.out.println(s6.isBlank());//true
+	
+		
+//	String word=" ";
+//	System.out.println(isThere(word));
+			
+		
+	}
+	
+	/*
+	 * public static boolean isThere(String l) { String s=l; char []
+	 * m=s.toCharArray(); boolean flag=false; for (char c :m) { if(!(c==32)) {
+	 * flag=true; } } return flag;
+	 * 
+	 * }
+	 */
+	
+	
+	
+	// equals(String)=>equals method is used to compare the content of two string .
+	//and its return type is boolean if two string is same then it will give
+	//result true other wise it will print false
+	
+	
+	public static void method2()
+	{
+		String name="ankit";
+		String name1="ankit";
+		String name2="Ankit";
+		
+		System.out.println(name.equals(name2));//here it will print false
+		//because it will in upper case so its not match
+		System.out.println(name.equals(name1));//here it will print true 
+	}
+	
+	//equalsIgnoreCase(String)=>it will also compare two string .but it will not consider a case
+	
+	
+	
+	public static void method3()
+	{
+	
+		String name="ankit";
+		String name1="Ankit";
+		
+		System.out.println("equlasIgnoreCase method reuslt is :=>"+name.equalsIgnoreCase(name1));
+		//here it will print the result true but why its different because case is different
+		//one is upper case another one is lower case so why it will give true 
+		//because here we can compare through equalsIgnoreCase thatswhy it will pint true/ 
+			
+	}
+	public static void mehtod4()
+	{
+		
+   //intern()=>this method is used to create an one object in s.c.p area supposed
+		
+ //if you write like this String s=new String("mohan");=>if you create instance like this 
+		
+//so it creates instance in heap area and also scp area but if you
+// u use intern method so it will create object in  only scp area 
+		
+		
+		
+		String s6=new String("mohan");
+		String s7=new String("mohan");
+		
+		
+		System.out.println(s6.equals(s7));// true 
+		System.out.println(s6==s7);// false 
+		
+		
+	}
+	
+	
+ 
+	
+}

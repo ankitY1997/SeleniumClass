@@ -1,0 +1,44 @@
+package Collection;
+
+public class Theory {
+	
+/*collections=>collection is a framework which is provided by java in this framework we have 
+ * a support of too many interfaces and class that works together to performed some operations
+ * like store data and create a data ,search a data ,read a data and delete a data ,update a data  operations
+ *
+ *BY default its available in java.util.package
+ *
+ *   difference between collection and Array
+ *   
+ * 1)  collection size is not fixed its always grow and shrink according to req.but array size
+ *   is fixed .
+ *   
+ * 2)  collection are able to stored heterogeneous type of data but array only stored homogeneous
+ *   type of data.
+ *   
+ * 3)  Array is able to store non primitive as well as primitive data type but in collection we can
+ *   stored only non primitive data type
+ *   
+ *   
+ * 4)  In collection we can stored a value  in the form of object
+ *   
+ * 5)   array provides better efficiency  as compare to collection 
+ * 
+ * 
+ *    to overcome array limitations java provide  a different type of  data structure to performed crud functions
+ *    
+ *    we can do these tasks in two ways :=>
+ *
+ *    1)collection hierarchy=>objects  are stored in the form of value 
+ *    2)Map hierarchy:=>objects are stored in key value pair
+ *    
+ *    
+ *     
+ *     
+ *    
+ * 
+ * 
+ */
+	
+
+}

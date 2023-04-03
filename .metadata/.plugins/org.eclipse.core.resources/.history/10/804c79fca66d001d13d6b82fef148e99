@@ -1,0 +1,26 @@
+package ExceptionHandling;
+
+import java.io.File;
+
+public class Program1 
+{
+//now first we will see what is compile time exception
+	
+	
+	public static void main(String []args)
+	{
+		File f=new File("E:\\automation.txt");
+		
+		if(!(f.exists()))
+		{
+			try {
+			
+				f.createNewFile();// so int his line it shows exception now we have to handle it
+			}
+			catch(Exception e)
+			{
+				System.out.println(e);
+			}
+		}
+	}
+}

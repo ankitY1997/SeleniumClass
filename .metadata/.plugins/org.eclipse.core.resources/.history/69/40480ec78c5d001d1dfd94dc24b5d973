@@ -1,0 +1,34 @@
+package AlertHandling;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class SimpleNotification {
+//this is simple notification when you see these kind of alert where you have only cancel ok or many be cancle enotification
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+		
+		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+		
+		//if you want to handle alert so you have alert class .here we will see how to use alert class
+		
+		
+		
+		WebElement not=driver.findElement(By.xpath("//button[text()=\"Click for JS Alert\"]"));
+		not.click();
+		
+		//so this the alert class
+		
+		Alert alt=driver.switchTo().alert();
+		
+		//if you want to click okk button so there is no inspect concept but you have direct option to accept which is provided by driver class
+		Thread.sleep(2000);
+		alt.accept();
+	}
+
+}

@@ -1,0 +1,32 @@
+package AlertHandling;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo2 
+{
+	public static void main(String[] args) 
+	{   
+		
+	   
+	System.setProperty("webdriver.chrome.driver", "../YoutubeFramework/chromedriver.exe");
+	    ChromeDriver   driver =new ChromeDriver();
+	        driver.get("https://www.youtube.com/");
+	        driver.manage().window().maximize();    
+	        WebElement SignUp= driver.findElement(By.cssSelector("#buttons ytd-button-renderer div.yt-spec-touch-feedback-shape__fill"));
+	        SignUp.click();
+	        WebElement EmailID= driver.findElement(By.xpath("//input[@autocomplete='username']"));
+	        EmailID.sendKeys("ballu.badmass101@gmail.com");
+	        Thread.sleep(3000);
+	    WebElement NextButton= driver.findElement(By.xpath("//span[text()='Next']")); 
+	       NextButton.click();
+	        Thread.sleep(3000); 
+	    WebElement Password= driver.findElement(By.xpath("//input[@type='password']"));
+	        Password.sendKeys("India@1234");
+	        WebElement NextButton1= driver.findElement(By.xpath("//button[@class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 qIypjc TrZEUc lw1w4b']"));        NextButton1.click();        Thread.sleep(3000);        System.out.println("You are now loged In ");        Thread.sleep(10000);        List<WebElement>  allvideo= driver.findElements(By.id("video-title"));        System.out.println("Size of allVideo is "+allvideo.size());            //.size method is used for getting the number of element stored in the Webelements         allvideo.get(1).click();                WebElement suscribe=driver.findElement(By.xpath("//div[@class='yt-spec-touch-feedback-shape__fill'][2]"));//[@id=\"subscribe-button\"]/ytd-button-renderer/yt-button-shape/button/yt-touch-feedback-shape/div/div[2]"));        suscribe.click();        Thread.sleep(10000);        System.out.println("Channel is suscribed");    }    @AfterMethod    public void closebrowser()    {        System.out.println("After Method");        driver.quit();    }
+	}
+	
+
+
+}

@@ -1,0 +1,85 @@
+package methodOverLoading;
+import java.util.Scanner;
+public class Method_over_3 
+{
+	//this the example of one class has a multiple main method but you need to remember method parameter will not be same if its same than method overloading will not be there
+	//and jvm always read first main(String []args)method
+	static int b;
+	static int d;
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("enter the string");
+		String c=sc.next();
+		System.out.println("enter the character");
+		char e=sc.next().charAt(0);
+		System.out.println("enter the number");
+		int f=sc.nextInt();
+		System.out.println("enter the number");
+		int y=sc.nextInt();
+		Metod_over1.sum(20,35,40,50);
+		
+		if((c==c)&&(e==0)&&(f==0)&&(y==0))
+		{
+			main(c);
+		}
+		else if((c=="0")&&(e>=0)&&(f==0)&&(y==0))
+		{
+			main(c);
+		}
+		else if((e==e)&&(f==0)&&(y==0)&&(c=="0"))
+		{
+			main(e);
+		}
+		else if((e==e)&&(f>0)&&(y>0))
+		{
+			main(e,f,y);
+		}
+		
+	}
+	public static void main(String n)
+	{
+		System.out.println(n);
+	}
+	public static void main(char c,int b,int d)
+	{
+		char a=c;
+			b=b;
+			d=d;
+			System.out.println("this is also calculation block");         
+			
+		if(c==0)
+		{
+			System.out.println(0);
+		}
+		else if(c=='+')
+		{
+			System.out.println("+");   
+			System.out.println("the sum of this :"+(d+'a'+b));
+		}
+		else if(c=='*')
+		{
+			System.out.println("the multification is :"+(d+'a'+b));
+		}
+		else if(c=='/')
+		{
+			System.out.println("the multification is :"+(d+'a'+b));	
+		}
+		else if(c=='-')
+		{
+			System.out.println("the multification is :"+(d+'a'+b));
+		}
+	}
+	public static void main(char c)
+	{
+		System.out.println("this is the  character block");
+		int d=c;
+		System.out.println(d);
+			
+	}
+	public static void main()
+	{
+		
+	}
+}

@@ -1,0 +1,15 @@
+package OpenBrowse;
+
+import BasePage.Basepage;
+import BasePage.Parent;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+		
+		Parent v=new Basepage();
+		v.openBrowser("chrome");
+		v.openUrl("https://the-internet.herokuapp.com/windows");
+	}
+
+}

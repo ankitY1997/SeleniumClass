@@ -1,0 +1,13 @@
+package Collection;
+
+public class Theory {
+	
+/*collections=>collection is a framework which is provided by java in this framework we have 
+ * a support of too many interfaces and class that works together to performed some operations
+ * like store data and create a data ,search a data ,read a data and delete a data ,update a data  operations
+ * 
+ * 
+ */
+	
+
+}

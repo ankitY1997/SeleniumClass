@@ -1,0 +1,33 @@
+package practice;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class GetTitle {
+
+	public static void main(String[] args) {
+		
+
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+	    
+	    driver.get("https://the-internet.herokuapp.com/");
+	    
+	    String x=driver.getTitle();
+	  //  System.out.println(x);
+	    
+	    if(x.equals("THe Internet"))
+	    {
+	    	System.out.println("test is passed");
+	    	
+	    }
+	    else
+	    {
+	    	System.out.println("test is failed");
+	    }
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.flipkart.utils&apos; to &apos;basic_oops/src/object_intialization_by_using_constructor&apos;&#x0D;&#x0A;- Original project: &apos;Flipkart&apos;&#x0D;&#x0A;- Destination element: &apos;basic_oops/src/object_intialization_by_using_constructor&apos;&#x0D;&#x0A;- Original element: &apos;Flipkart/src/com.flipkart.utils&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=basic_oops/src&lt;object_intialization_by_using_constructor" element1="/src&lt;com.flipkart.utils" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1669616495768" version="1.0"/>
+</session>

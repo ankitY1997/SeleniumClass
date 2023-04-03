@@ -1,0 +1,274 @@
+INFO	2022-12-26 10:12:30,178	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 10:12:31,521	1343	ebank	[main]	set username
+INFO	2022-12-26 10:12:31,655	1477	ebank	[main]	set password
+INFO	2022-12-26 10:12:34,009	3831	ebank	[main]	click on submit button
+WARN	2022-12-26 10:12:34,936	4758	ebank	[main]	test is passed
+INFO	2022-12-26 10:12:37,177	6999	ebank	[main]	set username
+INFO	2022-12-26 10:12:37,285	7107	ebank	[main]	set password
+INFO	2022-12-26 10:12:37,744	7566	ebank	[main]	click on submit button
+WARN	2022-12-26 10:12:37,766	7588	ebank	[main]	test is failed
+INFO	2022-12-26 10:12:39,860	9682	ebank	[main]	set username
+INFO	2022-12-26 10:12:39,984	9806	ebank	[main]	set password
+INFO	2022-12-26 10:12:40,440	10262	ebank	[main]	click on submit button
+WARN	2022-12-26 10:12:40,463	10285	ebank	[main]	test is failed
+  INFO	2022-12-26 11:29:39,904	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 11:29:41,405	1501	ebank	[main]	set username
+INFO	2022-12-26 11:29:41,748	1844	ebank	[main]	set password
+INFO	2022-12-26 11:29:44,482	4578	ebank	[main]	click on submit button
+WARN	2022-12-26 11:29:45,359	5455	ebank	[main]	test is passed
+INFO	2022-12-26 11:29:47,655	7751	ebank	[main]	set username
+INFO	2022-12-26 11:29:49,061	9157	ebank	[main]	set password
+INFO	2022-12-26 11:29:50,268	10364	ebank	[main]	click on submit button
+WARN	2022-12-26 11:29:50,292	10388	ebank	[main]	test is failed
+INFO	2022-12-26 11:33:40,357	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 11:33:41,535	1178	ebank	[main]	set username
+INFO	2022-12-26 11:33:41,684	1327	ebank	[main]	set password
+INFO	2022-12-26 11:33:44,980	4623	ebank	[main]	click on submit button
+WARN	2022-12-26 11:33:46,821	6464	ebank	[main]	test is passed
+INFO	2022-12-26 11:33:49,855	9498	ebank	[main]	set username
+INFO	2022-12-26 11:33:50,115	9758	ebank	[main]	set password
+INFO	2022-12-26 11:33:51,131	10774	ebank	[main]	click on submit button
+WARN	2022-12-26 11:33:51,153	10796	ebank	[main]	test is failed
+INFO	2022-12-26 11:35:35,643	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 11:35:36,853	1210	ebank	[main]	set username
+INFO	2022-12-26 11:35:37,058	1415	ebank	[main]	set password
+INFO	2022-12-26 11:35:41,957	6314	ebank	[main]	click on submit button
+WARN	2022-12-26 11:35:43,803	8160	ebank	[main]	test is passed
+INFO	2022-12-26 11:35:48,815	13172	ebank	[main]	set username
+INFO	2022-12-26 11:35:49,058	13415	ebank	[main]	set password
+INFO	2022-12-26 11:35:50,561	14918	ebank	[main]	click on submit button
+WARN	2022-12-26 11:35:50,582	14939	ebank	[main]	test is failed
+INFO	2022-12-26 11:39:40,129	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 11:39:41,180	1051	ebank	[main]	set username
+INFO	2022-12-26 11:39:41,309	1180	ebank	[main]	set password
+INFO	2022-12-26 11:39:45,608	5479	ebank	[main]	click on submit button
+WARN	2022-12-26 11:39:47,317	7188	ebank	[main]	test is passed
+INFO	2022-12-26 11:39:49,941	9812	ebank	[main]	set username
+INFO	2022-12-26 11:39:50,132	10003	ebank	[main]	set password
+INFO	2022-12-26 11:39:50,626	10497	ebank	[main]	click on submit button
+WARN	2022-12-26 11:39:50,653	10524	ebank	[main]	test is failed
+INFO	2022-12-26 11:47:08,436	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 11:47:09,920	1484	ebank	[main]	set username
+INFO	2022-12-26 11:47:10,046	1610	ebank	[main]	set password
+INFO	2022-12-26 11:47:13,986	5550	ebank	[main]	click on submit button
+WARN	2022-12-26 11:47:15,356	6920	ebank	[main]	test is passed
+INFO	2022-12-26 11:47:17,564	9128	ebank	[main]	set username
+INFO	2022-12-26 11:47:17,657	9221	ebank	[main]	set password
+INFO	2022-12-26 11:47:18,158	9722	ebank	[main]	click on submit button
+WARN	2022-12-26 11:47:18,181	9745	ebank	[main]	test is failed
+INFO	2022-12-26 11:55:26,464	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 11:57:37,472	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 11:57:38,892	1420	ebank	[main]	set username
+INFO	2022-12-26 11:57:39,139	1667	ebank	[main]	set password
+INFO	2022-12-26 11:57:42,209	4737	ebank	[main]	click on submit button
+WARN	2022-12-26 11:57:44,116	6644	ebank	[main]	test is passed
+INFO	2022-12-26 11:57:46,781	9309	ebank	[main]	set username
+INFO	2022-12-26 11:57:46,897	9425	ebank	[main]	set password
+INFO	2022-12-26 11:57:48,348	10876	ebank	[main]	click on submit button
+WARN	2022-12-26 11:57:48,376	10904	ebank	[main]	test is failed
+INFO	2022-12-26 12:07:37,158	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 12:07:38,241	1083	ebank	[main]	set username
+INFO	2022-12-26 12:07:38,493	1335	ebank	[main]	set password
+INFO	2022-12-26 12:07:46,774	9616	ebank	[main]	click on submit button
+WARN	2022-12-26 12:07:48,159	11001	ebank	[main]	test is passed
+INFO	2022-12-26 12:07:51,261	14103	ebank	[main]	set username
+INFO	2022-12-26 12:07:51,383	14225	ebank	[main]	set password
+INFO	2022-12-26 12:07:52,412	15254	ebank	[main]	click on submit button
+WARN	2022-12-26 12:07:52,448	15290	ebank	[main]	test is failed
+INFO	2022-12-26 12:28:14,081	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 12:28:15,191	1110	ebank	[main]	set username
+INFO	2022-12-26 12:28:15,370	1289	ebank	[main]	set password
+INFO	2022-12-26 12:28:18,022	3941	ebank	[main]	click on submit button
+WARN	2022-12-26 12:28:20,636	6555	ebank	[main]	test is passed
+INFO	2022-12-26 12:28:27,000	12919	ebank	[main]	set username
+INFO	2022-12-26 12:28:27,112	13031	ebank	[main]	set password
+INFO	2022-12-26 12:28:28,198	14117	ebank	[main]	click on submit button
+WARN	2022-12-26 12:28:28,219	14138	ebank	[main]	test is failed
+INFO	2022-12-26 12:33:09,746	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 12:33:10,780	1034	ebank	[main]	set username
+INFO	2022-12-26 12:33:10,894	1148	ebank	[main]	set password
+INFO	2022-12-26 12:33:20,013	10267	ebank	[main]	click on submit button
+WARN	2022-12-26 12:33:21,450	11704	ebank	[main]	test is passed
+INFO	2022-12-26 12:33:23,287	13541	ebank	[main]	set username
+INFO	2022-12-26 12:33:23,514	13768	ebank	[main]	set password
+INFO	2022-12-26 12:33:24,102	14356	ebank	[main]	click on submit button
+WARN	2022-12-26 12:33:24,122	14376	ebank	[main]	test is failed
+INFO	2022-12-26 12:38:19,521	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 12:38:20,707	1186	ebank	[main]	set username
+INFO	2022-12-26 12:38:20,823	1302	ebank	[main]	set password
+INFO	2022-12-26 12:38:23,071	3550	ebank	[main]	click on submit button
+WARN	2022-12-26 12:38:23,979	4458	ebank	[main]	test is passed
+INFO	2022-12-26 12:38:26,724	7203	ebank	[main]	set username
+INFO	2022-12-26 12:38:26,934	7413	ebank	[main]	set password
+INFO	2022-12-26 12:38:27,963	8442	ebank	[main]	click on submit button
+WARN	2022-12-26 12:38:27,983	8462	ebank	[main]	test is failed
+INFO	2022-12-26 12:38:32,465	12944	ebank	[main]	set username
+INFO	2022-12-26 12:38:32,563	13042	ebank	[main]	set password
+INFO	2022-12-26 12:38:34,066	14545	ebank	[main]	click on submit button
+WARN	2022-12-26 12:38:34,094	14573	ebank	[main]	test is failed
+INFO	2022-12-26 12:42:46,433	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 12:42:47,578	1145	ebank	[main]	set username
+INFO	2022-12-26 12:42:47,711	1278	ebank	[main]	set password
+INFO	2022-12-26 12:42:49,285	2852	ebank	[main]	click on submit button
+WARN	2022-12-26 12:42:50,676	4243	ebank	[main]	test is passed
+INFO	2022-12-26 12:42:54,082	7649	ebank	[main]	set username
+INFO	2022-12-26 12:42:54,226	7793	ebank	[main]	set password
+INFO	2022-12-26 12:42:55,293	8860	ebank	[main]	click on submit button
+WARN	2022-12-26 12:42:55,315	8882	ebank	[main]	test is failed
+INFO	2022-12-26 12:44:27,115	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 12:44:28,551	1436	ebank	[main]	set username
+INFO	2022-12-26 12:44:28,749	1634	ebank	[main]	set password
+INFO	2022-12-26 12:44:31,813	4698	ebank	[main]	click on submit button
+WARN	2022-12-26 12:44:32,595	5480	ebank	[main]	test is passed
+INFO	2022-12-26 12:44:35,131	8016	ebank	[main]	set username
+INFO	2022-12-26 12:44:35,791	8676	ebank	[main]	set password
+INFO	2022-12-26 12:44:36,263	9148	ebank	[main]	click on submit button
+WARN	2022-12-26 12:44:36,287	9172	ebank	[main]	test is failed
+INFO	2022-12-26 12:56:17,290	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 12:56:18,499	1209	ebank	[main]	set username
+INFO	2022-12-26 12:56:18,623	1333	ebank	[main]	set password
+INFO	2022-12-26 12:56:21,440	4150	ebank	[main]	click on submit button
+WARN	2022-12-26 12:56:22,235	4945	ebank	[main]	test is passed
+INFO	2022-12-26 12:56:24,252	6962	ebank	[main]	set username
+INFO	2022-12-26 12:56:24,394	7104	ebank	[main]	set password
+INFO	2022-12-26 12:56:24,864	7574	ebank	[main]	click on submit button
+INFO	2022-12-26 12:56:26,743	9453	ebank	[main]	set username
+INFO	2022-12-26 12:56:26,924	9634	ebank	[main]	set password
+INFO	2022-12-26 12:56:27,386	10096	ebank	[main]	click on submit button
+INFO	2022-12-26 12:59:12,769	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 12:59:13,881	1112	ebank	[main]	set username
+INFO	2022-12-26 12:59:14,008	1239	ebank	[main]	set password
+INFO	2022-12-26 12:59:19,763	6994	ebank	[main]	click on submit button
+WARN	2022-12-26 12:59:20,674	7905	ebank	[main]	test is passed
+INFO	2022-12-26 12:59:25,316	12547	ebank	[main]	set username
+INFO	2022-12-26 12:59:25,558	12789	ebank	[main]	set password
+INFO	2022-12-26 12:59:26,881	14112	ebank	[main]	click on submit button
+INFO	2022-12-26 12:59:31,426	18657	ebank	[main]	set username
+INFO	2022-12-26 12:59:31,751	18982	ebank	[main]	set password
+INFO	2022-12-26 12:59:32,918	20149	ebank	[main]	click on submit button
+INFO	2022-12-26 13:04:27,165	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 13:04:28,743	1578	ebank	[main]	set username
+INFO	2022-12-26 13:04:28,864	1699	ebank	[main]	set password
+INFO	2022-12-26 13:04:30,870	3705	ebank	[main]	click on submit button
+WARN	2022-12-26 13:04:33,270	6105	ebank	[main]	test is passed
+INFO	2022-12-26 13:04:35,615	8450	ebank	[main]	set username
+INFO	2022-12-26 13:04:35,787	8622	ebank	[main]	set password
+INFO	2022-12-26 13:04:36,306	9141	ebank	[main]	click on submit button
+INFO	2022-12-26 13:04:38,603	11438	ebank	[main]	set username
+INFO	2022-12-26 13:04:38,709	11544	ebank	[main]	set password
+INFO	2022-12-26 13:04:39,375	12210	ebank	[main]	click on submit button
+INFO	2022-12-26 13:05:18,046	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 13:05:19,631	1585	ebank	[main]	set username
+INFO	2022-12-26 13:05:19,764	1718	ebank	[main]	set password
+INFO	2022-12-26 13:05:22,428	4382	ebank	[main]	click on submit button
+WARN	2022-12-26 13:05:23,220	5174	ebank	[main]	test is passed
+INFO	2022-12-26 13:05:26,250	8204	ebank	[main]	set username
+INFO	2022-12-26 13:05:26,342	8296	ebank	[main]	set password
+INFO	2022-12-26 13:05:27,417	9371	ebank	[main]	click on submit button
+INFO	2022-12-26 13:05:29,831	11785	ebank	[main]	set username
+INFO	2022-12-26 13:05:30,039	11993	ebank	[main]	set password
+INFO	2022-12-26 13:05:31,289	13243	ebank	[main]	click on submit button
+INFO	2022-12-26 13:07:55,738	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 13:07:56,984	1246	ebank	[main]	set username
+INFO	2022-12-26 13:07:57,105	1367	ebank	[main]	set password
+INFO	2022-12-26 13:07:59,450	3712	ebank	[main]	click on submit button
+WARN	2022-12-26 13:08:00,379	4641	ebank	[main]	test is passed
+INFO	2022-12-26 13:08:03,582	7844	ebank	[main]	set username
+INFO	2022-12-26 13:08:03,673	7935	ebank	[main]	set password
+INFO	2022-12-26 13:08:04,931	9193	ebank	[main]	click on submit button
+WARN	2022-12-26 13:08:04,953	9215	ebank	[main]	test is failed
+INFO	2022-12-26 13:08:07,710	11972	ebank	[main]	set username
+INFO	2022-12-26 13:08:07,811	12073	ebank	[main]	set password
+INFO	2022-12-26 13:08:08,837	13099	ebank	[main]	click on submit button
+WARN	2022-12-26 13:08:08,861	13123	ebank	[main]	test is failed
+INFO	2022-12-26 14:50:34,417	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 14:50:35,932	1515	ebank	[main]	set username
+INFO	2022-12-26 14:50:36,095	1678	ebank	[main]	set password
+INFO	2022-12-26 14:50:42,863	8446	ebank	[main]	click on submit button
+WARN	2022-12-26 14:50:45,078	10661	ebank	[main]	test is passed
+INFO	2022-12-26 14:50:49,906	15489	ebank	[main]	set username
+INFO	2022-12-26 14:50:50,205	15788	ebank	[main]	set password
+INFO	2022-12-26 14:50:51,240	16823	ebank	[main]	click on submit button
+WARN	2022-12-26 14:50:51,255	16838	ebank	[main]	test is failed
+INFO	2022-12-26 14:50:54,848	20431	ebank	[main]	set username
+INFO	2022-12-26 14:50:54,949	20532	ebank	[main]	set password
+INFO	2022-12-26 14:50:55,997	21580	ebank	[main]	click on submit button
+WARN	2022-12-26 14:50:56,017	21600	ebank	[main]	test is failed
+INFO	2022-12-26 14:53:28,852	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 14:53:29,769	917	ebank	[main]	set username
+INFO	2022-12-26 14:53:29,875	1023	ebank	[main]	set password
+INFO	2022-12-26 14:53:44,414	15562	ebank	[main]	click on submit button
+WARN	2022-12-26 14:53:46,609	17757	ebank	[main]	test is passed
+INFO	2022-12-26 14:53:55,361	26509	ebank	[main]	set username
+INFO	2022-12-26 14:53:55,461	26609	ebank	[main]	set password
+INFO	2022-12-26 14:53:58,060	29208	ebank	[main]	click on submit button
+WARN	2022-12-26 14:53:58,157	29305	ebank	[main]	test is failed
+INFO	2022-12-26 14:54:06,187	37335	ebank	[main]	set username
+INFO	2022-12-26 14:54:06,293	37441	ebank	[main]	set password
+INFO	2022-12-26 14:54:09,581	40729	ebank	[main]	click on submit button
+WARN	2022-12-26 14:54:09,607	40755	ebank	[main]	test is failed
+INFO	2022-12-26 15:15:43,024	0	ebank	[main]	suceesfully open url
+INFO	2022-12-26 15:15:44,695	1671	ebank	[main]	set username
+INFO	2022-12-26 15:15:44,840	1816	ebank	[main]	set password
+INFO	2022-12-26 15:15:48,841	5817	ebank	[main]	click on submit button
+WARN	2022-12-26 15:15:50,084	7060	ebank	[main]	test is passed
+INFO	2022-12-26 15:15:52,141	9117	ebank	[main]	set username
+INFO	2022-12-26 15:15:52,239	9215	ebank	[main]	set password
+INFO	2022-12-26 15:15:54,391	11367	ebank	[main]	click on submit button
+WARN	2022-12-26 15:15:54,411	11387	ebank	[main]	test is failed
+INFO	2022-12-27 10:12:54,722	0	ebank	[main]	suceesfully open url
+INFO	2022-12-27 10:12:56,360	1638	ebank	[main]	set username
+INFO	2022-12-27 10:12:56,496	1774	ebank	[main]	set password
+INFO	2022-12-27 10:12:59,989	5267	ebank	[main]	click on submit button
+WARN	2022-12-27 10:13:00,965	6243	ebank	[main]	test is passed
+INFO	2022-12-27 10:13:03,308	8586	ebank	[main]	set username
+INFO	2022-12-27 10:13:03,412	8690	ebank	[main]	set password
+INFO	2022-12-27 10:13:03,879	9157	ebank	[main]	click on submit button
+WARN	2022-12-27 10:13:03,904	9182	ebank	[main]	test is failed
+INFO	2022-12-27 10:13:06,497	11775	ebank	[main]	set username
+INFO	2022-12-27 10:13:06,611	11889	ebank	[main]	set password
+INFO	2022-12-27 10:13:08,007	13285	ebank	[main]	click on submit button
+WARN	2022-12-27 10:13:08,031	13309	ebank	[main]	test is failed
+INFO	2022-12-27 10:21:40,185	0	ebank	[main]	suceesfully open url
+INFO	2022-12-27 10:21:41,504	1319	ebank	[main]	set username
+INFO	2022-12-27 10:21:41,617	1432	ebank	[main]	set password
+INFO	2022-12-27 10:21:43,985	3800	ebank	[main]	click on submit button
+WARN	2022-12-27 10:21:45,185	5000	ebank	[main]	test is passed
+INFO	2022-12-27 10:21:47,060	6875	ebank	[main]	set username
+INFO	2022-12-27 10:21:47,172	6987	ebank	[main]	set password
+INFO	2022-12-27 10:21:47,644	7459	ebank	[main]	click on submit button
+WARN	2022-12-27 10:21:47,663	7478	ebank	[main]	test is failed
+INFO	2022-12-27 10:21:51,011	10826	ebank	[main]	set username
+INFO	2022-12-27 10:21:51,213	11028	ebank	[main]	set password
+INFO	2022-12-27 10:21:51,638	11453	ebank	[main]	click on submit button
+WARN	2022-12-27 10:21:51,653	11468	ebank	[main]	test is failed
+INFO	2022-12-30 18:52:24,865	0	ebank	[main]	suceesfully open url
+INFO	2022-12-30 18:53:46,689	0	ebank	[main]	suceesfully open url
+INFO	2022-12-30 18:56:29,845	0	ebank	[main]	suceesfully open url
+INFO	2022-12-30 18:59:05,801	0	ebank	[main]	suceesfully open url
+INFO	2022-12-30 19:01:43,304	0	ebank	[main]	suceesfully open url
+INFO	2022-12-30 19:01:44,641	1337	ebank	[main]	set username
+INFO	2022-12-30 19:01:44,781	1477	ebank	[main]	set password
+INFO	2022-12-30 19:01:46,794	3490	ebank	[main]	click on submit button
+WARN	2022-12-30 19:01:47,724	4420	ebank	[main]	test is passed
+INFO	2022-12-30 19:01:49,318	6014	ebank	[main]	set username
+INFO	2022-12-30 19:01:49,585	6281	ebank	[main]	set password
+INFO	2022-12-30 19:01:50,167	6863	ebank	[main]	click on submit button
+WARN	2022-12-30 19:01:50,190	6886	ebank	[main]	test is failed
+INFO	2022-12-30 19:01:52,634	9330	ebank	[main]	set username
+INFO	2022-12-30 19:01:52,754	9450	ebank	[main]	set password
+INFO	2022-12-30 19:01:53,270	9966	ebank	[main]	click on submit button
+WARN	2022-12-30 19:01:53,289	9985	ebank	[main]	test is failed
+INFO	2022-12-30 19:02:38,956	0	ebank	[main]	suceesfully open url
+INFO	2022-12-30 19:02:40,429	1473	ebank	[main]	set username
+INFO	2022-12-30 19:02:40,607	1651	ebank	[main]	set password
+INFO	2022-12-30 19:02:42,382	3426	ebank	[main]	click on submit button
+WARN	2022-12-30 19:02:43,265	4309	ebank	[main]	test is passed
+INFO	2022-12-30 19:02:44,997	6041	ebank	[main]	set username
+INFO	2022-12-30 19:02:45,456	6500	ebank	[main]	set password
+INFO	2022-12-30 19:02:45,984	7028	ebank	[main]	click on submit button
+WARN	2022-12-30 19:02:46,006	7050	ebank	[main]	test is failed
+INFO	2022-12-30 19:02:48,422	9466	ebank	[main]	set username
+INFO	2022-12-30 19:02:48,524	9568	ebank	[main]	set password
+INFO	2022-12-30 19:02:49,717	10761	ebank	[main]	click on submit button
+WARN	2022-12-30 19:02:49,738	10782	ebank	[main]	test is failed

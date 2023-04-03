@@ -1,0 +1,40 @@
+package Calendar;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Program1 {
+
+	public static void main(String[] args) throws Exception {
+		
+//1. you need to validate the input date 
+		
+		String targetdate="30-Feb-2021";
+		
+	SimpleDateFormat targetdateFormat=new SimpleDateFormat("dd-MMM-yyyy"); 
+	
+	//now i want to convert my date into targetdateFormat
+	try {
+	targetdateFormat.setLenient(false);
+	Date formated_date=targetdateFormat.parse(targetdate);
+	}
+	catch(Exception e)
+	{
+		throw new Exception("its invalid date please input valid date ");
+	}
+	
+	Date formated_date=targetdateFormat.parse(targetdate);//converted
+	// now i want to validate my date is it right or not 
+	//so i will use is it right or not
+	
+	
+	System.out.println(formated_date);//
+	
+	
+	
+		
+		
+	}
+
+}

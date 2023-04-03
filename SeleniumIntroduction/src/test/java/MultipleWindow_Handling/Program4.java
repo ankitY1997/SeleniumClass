@@ -1,0 +1,64 @@
+package MultipleWindow_Handling;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Program4 {
+
+	public static void main(String[] args) throws Exception 
+	{
+	//if you want to handle multiple window soo see how we can handle
+		
+
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+		driver.get("https://demoqa.com/");
+		String x=driver.getWindowHandle();
+		System.out.println(x);
+		//mow we can find some another window and click it so that means we have to window 
+		//first step we will find the elements 
+		
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//h5[text()=\"Alerts, Frame & Windows\"]")).click();
+
+		//driver.findElement(By.xpath("//span[text()=\"Alerts, Frame & Windows\"]")).click();
+		driver.findElement(By.xpath("//span[text()=\"Browser Windows\"]")).click();
+	Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//button[text()=\"New Window\"]")).click();
+		
+		//now i wnt to know how many window are open so i used to get window handle method 
+		//so i got idea how many window are there
+		//so finding a window so we have two mehtod one is window driver.get window handles and anothe r one is get window handles but both are same so how its diffrent one window methods only return string that means one value another one is return set so this set methods helps we can esily findoout the window
+		
+		//so we will use set window method 
+		
+	Set<String> no_of_windows =	driver.getWindowHandles();
+	//so this method gives me a idea how many methods are open
+	
+	System.out.println(no_of_windows.size());//this gives me the number of windows
+	System.out.println(no_of_windows);//this give me the acual url or we can say id
+	
+//now we can use iterator to store those values 
+	
+	Iterator<String> window=no_of_windows.iterator();
+	
+	String parent=window.next();
+	String child=window.next();
+	
+	
+	
+//now i want to move back so i have to use switvh window method
+	
+	driver.switchTo().window(child);
+	Thread.sleep(5000);
+	
+	}
+
+}

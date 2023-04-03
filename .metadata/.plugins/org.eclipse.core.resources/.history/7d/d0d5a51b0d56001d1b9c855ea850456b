@@ -1,0 +1,32 @@
+package ExceptionHandling;
+import java.io.*;
+public class ThrowsKeyword
+{
+	
+/*throws keyword is used to transfer a exception 
+ * Syntax :-methodName() throws exception1,io exception
+ * so see how it will work 
+ */
+	
+	public static void main(String []args) 
+	{
+		FileInputStream fis;
+		try
+		{
+			fis=new FileInputStream("some.text");
+		int data =fis.read();
+		System.out.println(data);
+		}
+		catch(Exception ae)
+		{
+			ae.printStackTrace();
+		}
+		finally
+		{
+		
+			fis.close();
+		}
+		
+	}
+	
+}

@@ -1,0 +1,55 @@
+package Practice;
+
+public class Program1 {
+
+	public static void main(String[] args) 
+	{
+		
+		String x="abcd";
+		String y=x;
+		int count =0;
+		boolean flag=false;
+		int num=x.length();
+		//System.out.println(num);
+		int i=0;
+		int j=0;
+		
+		while(i<x.length())
+		{
+		count++;
+			char z=x.charAt(i);
+			int asci=z;
+			char l=y.charAt(j);
+			int asci1=l;
+			
+		if((asci>asci1)&&(flag==true))
+		{
+			System.out.println((char)(asci));
+		}
+		else
+		{
+		flag=true;
+		//System.out.println(z);
+		}
+		
+				
+	
+		if(count==4)
+		{
+			//System.out.println(count);
+		i=0;
+		j++;
+			
+		}
+		System.out.println("============="+i);
+		System.out.println("+++++++++++++++++"+j);
+		i++;
+			
+			
+			
+	}
+	
+	
+
+}
+}

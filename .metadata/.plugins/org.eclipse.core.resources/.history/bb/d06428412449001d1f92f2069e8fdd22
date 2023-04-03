@@ -1,0 +1,17 @@
+package StringHandling;
+
+public class StringMethod 
+{
+public static void main(String []args)
+{
+	String name="ankit";
+	String dateofbirth="24 jan 1997";
+	String father_name="kamalakant yadav";
+	String mother_name="indravati devi";
+	String name1="Ankit";
+	
+	//first we will convert in upper case
+	System.out.println(name.toUpperCase());//here it will become ANKIT
+	System.out.println(name1.toLowerCase());//
+}
+}

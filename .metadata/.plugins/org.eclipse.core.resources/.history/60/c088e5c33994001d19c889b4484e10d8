@@ -1,0 +1,5 @@
+
+@Ignore
+package com.ignore;
+
+import org.testng.annotations.Ignore;

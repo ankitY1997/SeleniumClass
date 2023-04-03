@@ -1,0 +1,30 @@
+package com.inetBankin.testCases;
+
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+
+import com.inetBankin.pageObjects.LogInPage;
+
+public class Tc_LogInTest_001 extends BaseClass
+{
+	@Test
+	public void logIn()
+	{
+		
+		driver.get(url);
+		logger.info("suceesfully open url");
+		
+		LogInPage login=new LogInPage(driver);
+		login.setUserName(userId);
+		login.setPassward(passward);
+		
+		logger.info("password is succesfully set");
+		login.clickSubmit();
+		
+		logger.info("login tets is sucessfully passed");
+		
+		
+	}
+}

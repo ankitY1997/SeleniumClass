@@ -1,0 +1,58 @@
+package practice;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Claendar {
+
+	public static void main(String[] args) throws Exception {
+	
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+	    
+	    
+	    driver.get("https://www.sastasafar.com/flight-deal?msclkid=513a58ba47331a2ce1b23bcb58e994dc&utm_source=bing&utm_medium=cpc&utm_campaign=Flight%20Booking-%20Competition&utm_term=yatra%20com&utm_content=Exact%20Match");
+		
+	    driver.findElement(By.xpath("//input[@name=\"trip_start_date\"]")).click();
+	    List<WebElement> column=driver.findElements(By.xpath("//table[@class=\"picker__table\"]/child::thead/tr[1]/th"));
+	    
+	    int columnsize=column.size();
+	    System.out.println(columnsize);
+	    
+	    
+	    List<WebElement> row=driver.findElements(By.xpath("//tbody/tr"));
+	    int rowsize=row.size();
+	    System.out.println(rowsize);
+	    
+	    //Thread.sleep(5000);
+	    	for(int i=1;i<row.size();i++)
+	    	{
+	    		String x=row.get(i).getText();
+	    		System.out.println(x);
+	    		int j=1;
+	    		while(j<column.size())
+	    		{
+	    		WebElement date=driver.findElement(By.xpath("//table[@class=\"picker__table\"]/thead/following-sibling::tbody/tr["+i+"]/td["+j+"]"));
+	    		
+	    		String name=date.getText();
+	    		System.out.println(name);
+	    		
+	    		
+	    		if(j==14)
+	    		{
+	    			break;
+	    		}
+	    		}
+	    		
+	    	}
+	    
+	    
+	}
+
+}

@@ -1,0 +1,12 @@
+package Practice1;
+
+public class Car {
+
+	String name="Toyata";
+	String colour="black";
+	
+	public void engine() {
+		
+	}
+
+}

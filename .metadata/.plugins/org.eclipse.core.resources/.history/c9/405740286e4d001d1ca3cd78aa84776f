@@ -1,0 +1,40 @@
+package loop;
+import java.util.*;
+public class PalindromeNumber 
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		int x=sc.nextInt();
+		int value=x;
+		int firstvalue;
+		int lastvalue;
+
+			while(x!=0)
+			{
+				 firstvalue=x/10;
+				 lastvalue=x%10;
+				 System.out.println(firstvalue);
+				 System.out.println(lastvalue);
+				 while(x!=0)
+				 {
+					 x=x/10; 
+				 }
+			
+			if(firstvalue==lastvalue)
+			{
+				System.out.println("this number is palindrome number :"+value);
+			}
+			else
+			{
+				System.out.println("this number is not a palindrome number :"+value);
+			}
+			
+			}
+		}
+		
+	}
+	
+

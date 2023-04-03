@@ -1,0 +1,29 @@
+package BasePage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Basepage extends Parent {
+
+	public static WebDriver driver;
+	public void basePage(String name)
+	{
+		if(name.equals("chrome"))
+		{
+		System.setProperty("webdriver.chrome.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\chromedriver.exe");
+		 driver=new ChromeDriver();
+		
+		}
+		else if(name.equals("Edge"))
+		{
+			System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+			 driver=new EdgeDriver();
+		}
+	}
+	public void openUrl(String url)
+	{
+		
+	driver.get(url);
+	}
+}

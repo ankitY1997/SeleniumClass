@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.intro.WebElement&apos; to &apos;WebElement1&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumIntroduction&apos;&#x0D;&#x0A;- Original element: &apos;com.intro.WebElement&apos;&#x0D;&#x0A;- Renamed element: &apos;com.intro.WebElement1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;WebElement&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;com.intro{WebElement.java[WebElement" matchStrategy="1" name="WebElement1" qualified="false" references="true" similarDeclarations="false" stamp="1667195566284" textual="false" version="1.0"/>
+</session>

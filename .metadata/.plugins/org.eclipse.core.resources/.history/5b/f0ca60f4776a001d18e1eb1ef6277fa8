@@ -1,0 +1,19 @@
+package Practice1;
+
+public class ElectricCar extends Car 
+{
+String name="fortuner";
+String colour="white";
+
+
+public void wheel()
+{
+	System.out.println("this is child class");
+}
+
+ public ElectricCar()
+ {
+System.out.println(super.name); 
+ }
+ 
+}

@@ -1,0 +1,32 @@
+package com.webElementMethods;
+
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class SendKeys extends BasePage {
+	
+	
+/*send keys =>sendKeys is a method which is used to send a text in the form of string and also
+we can perform many opertion like  */
+//by using key class=>Key has a many staic method so we can do lets see how we can do
+	
+/*Keys.control,"a"=>you can perform select operation
+ * Keys.control,"c"=>copy operation
+ * Keys.control,"v"=>paste operation
+ * 	
+ */
+	
+	@Test
+	public void send()
+	{
+		
+		openBrowser("Edge");
+		openUrl("https://www.actitime.com");
+		
+	}
+
+
+
+
+}

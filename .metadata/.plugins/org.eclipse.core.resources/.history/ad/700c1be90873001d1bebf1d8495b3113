@@ -1,0 +1,36 @@
+package Practice;
+
+public class Program1 {
+
+	public static void main(String[] args) 
+	{
+		
+		String x="abdc";
+		String y=x;
+		int count =0;
+		boolean flag=false;
+		int num=x.length();
+		System.out.println(num);
+		
+		int i=0;
+		int j=0;
+		while(i<x.length())
+		{
+		count++;
+			char z=x.charAt(i);
+			int asci=z;
+			char l=y.charAt(j);
+			int asci1=l;
+			
+			
+			
+			System.out.println(asci+"==="+asci1);
+			
+			i++;
+			j++;
+	}
+	
+	
+
+}
+}

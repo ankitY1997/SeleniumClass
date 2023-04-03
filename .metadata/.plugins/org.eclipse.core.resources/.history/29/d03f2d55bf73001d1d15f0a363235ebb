@@ -1,0 +1,47 @@
+package DriverInterFaceOperation;
+
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class WindowOperations extends BasePage
+{
+
+ /*if you want to perform some window type operation so we can use manage() interface which have a method of 
+	windows here we can perform all window related task like maximized and minimized and full screen
+	*difference between maximized and fullscreen =>
+	*
+	 difference is in maximized mode we can able to see browser option but in fullscrren
+	 we can't able to see browser option
+
+
+	
+	so let see*/
+	
+	@Test
+	public void Window() throws InterruptedException
+	{
+		openBrowser("Edge");
+		
+		//now we have to see maximized operation 
+		
+		driver.manage().window().maximize();
+		openUrl("https://www.instagram.com/");
+		
+		Thread.sleep(2000);
+		
+		//now we can see full screen so we get to know what's the difference 
+		
+		driver.navigate().to("https://www.instagram.com/");
+		driver.manage().window().fullscreen();
+		
+		//lets see
+		
+		Thread.sleep(2000);
+		
+		
+		
+	}
+	
+	
+}

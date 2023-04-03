@@ -1,0 +1,12 @@
+package testScenario;
+
+public class GoogleSearchTest 
+{
+
+
+	@Beforetest
+	public void search()
+	{
+		
+	}
+}

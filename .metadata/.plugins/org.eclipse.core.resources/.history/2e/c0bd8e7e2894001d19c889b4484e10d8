@@ -1,0 +1,11 @@
+
+<suite name="Suite">
+  <test name="Test">
+  <parameters>
+  <parameter>name="browser" value="chrome"</parameter>
+  </parameters>
+    <classes>
+      <class name="com.ignore.Test1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

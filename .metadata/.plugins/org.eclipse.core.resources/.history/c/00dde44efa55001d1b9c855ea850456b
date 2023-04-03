@@ -1,0 +1,24 @@
+package ExceptionHandling;
+import java.util.Scanner;
+public class CustomizedException 
+{
+
+	public static void main(String []args) throws DebitException
+	{
+		Scanner x=new Scanner(System.in);
+		System.out.println("enter the amount ");
+		int amt=x.nextInt();
+		
+		if(amt<=0)
+		{
+			throw new DebitException("you can not withdraw a money",001);
+			//System.out.println("xyz");
+		}
+		else 
+		{
+		System.out.println("amt is suceesfully debited");	
+		}
+		System.out.println("pls visit your nearest branch");
+	}
+	
+}

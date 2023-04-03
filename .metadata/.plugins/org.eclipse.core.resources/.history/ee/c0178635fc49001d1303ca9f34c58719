@@ -1,0 +1,41 @@
+package StringHandling;
+
+public class _2dArray_18_oct_ 
+{
+public static void main(String[] args)
+{
+	//2D-array means you have two rows and two column
+	
+/*Syntax:-datatyppe [] [] varname=new datatype[][];
+ * 
+ * []-first array is  for rows 
+ * []-second array is for column
+ * 
+ * 
+ */
+	String[][]data=new String[3][2];
+	data[0][0]="first name";
+	data[0][1]="last name";
+	//data[0][2]="address";
+	data[0][0]="sagar";
+	data[1][0]="ankit";
+	data[2][0]="vishnu"; //RIGHT PROCESS
+    data[0][1]="bisla";
+    data[1][1]="dhonchak";
+    data[2][1]="parsad";
+	//data[2][0]="vishnu";
+	//data[2][1]="bisla";
+	//data[2][2]="dhonchak";
+	//data[2][1]="parsad";  WRONG PROCESS
+	/*data[0][2]="faridabad";
+	data[1][2]="rohini";
+	data[2][2]="ashok nagar";*/
+	
+	System.out.println(data.length);//this show the length of rows
+	
+	//if you want to know the length of column than you take a reference of row [0]
+	System.out.println(data[0].length); 
+	
+	
+}
+}

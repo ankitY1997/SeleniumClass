@@ -1,0 +1,18 @@
+package StringHandling;
+import java.util.*;
+public class ConstructorReverseString 
+{
+public static void main(String []args)
+{
+	String name="my name is ankit";
+	Scanner sc=new Scanner(System.in);
+	//char c=sc.nextLine().charAt(0);
+	System.out.println(name.length());
+	/*for(int i=;i<=sc.length()-1;i--)
+	{
+		char c=sc.nextLine().charAt(i);	
+		System.out.println(c);
+	}*/
+	
+}
+}

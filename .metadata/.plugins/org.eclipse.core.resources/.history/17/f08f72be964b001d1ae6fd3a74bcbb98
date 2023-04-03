@@ -1,0 +1,19 @@
+package StringHandling;
+
+public class Constructor14 
+{
+	//we have a two type of constructor 
+	//1.default constructor
+	//2.parameterized constructor
+public static void main(String []args)
+{
+	Constructor14 s=new Constructor14("ankit");
+	
+}
+
+ public Constructor14(String n)
+ {
+	System.out.println("this is parametrized constructor :"+n); 
+ }
+
+}

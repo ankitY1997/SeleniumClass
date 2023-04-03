@@ -1,0 +1,15 @@
+<suite>
+<test>
+<classes>
+
+<class> name="com.webElmentMethods.SendKeys"</class>
+
+</classes>
+
+
+</test>
+
+
+
+
+</suite>

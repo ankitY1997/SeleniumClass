@@ -1,0 +1,11 @@
+package constructorOverLoading;
+
+public class EmployeDriver 
+{
+public static void main(String[]args)
+
+{
+	Employe n=new Employe("ankit",24);
+	n.display();
+}
+}

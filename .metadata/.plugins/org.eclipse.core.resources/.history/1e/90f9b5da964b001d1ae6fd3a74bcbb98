@@ -1,0 +1,22 @@
+package StringHandling;
+
+public class Constructor14 
+{
+	String name="gaurav";
+	//we have a two type of constructor 
+	//1.default constructor
+	//2.parameterized constructor
+public static void main(String []args)
+{
+	Constructor14 s=new Constructor14("ankit");
+	
+}
+
+ public Constructor14(String name)
+ {
+	 this.name=name;
+	System.out.println("this is parametrized constructor :"+name); 
+	System.out.println("this is parametrized constructor :"+this.name); 
+ }
+
+}

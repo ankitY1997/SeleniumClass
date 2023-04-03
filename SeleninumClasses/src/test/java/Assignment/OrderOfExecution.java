@@ -1,0 +1,40 @@
+package Assignment;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class OrderOfExecution extends BasePage
+{
+	@Test(priority=1)
+	public void open()
+	{
+		
+		openBrowser("Edge");
+		openUrl("https://www.facebook.com/");
+		
+		
+	}
+	@Test(priority=2)
+	public void enterDetails()
+	{
+		driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys("9407149937");
+		driver.findElement(By.xpath("//input[@placeholder=\"Password\"]")).sendKeys("ankit@123");
+		
+	}
+	@Test(priority=3)
+	public void clickLogin()
+	{
+		driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+	}
+	
+	
+	@Test(priority=4)
+	
+	public void closeCon()
+	{
+		driver.quit();
+	}
+	
+}

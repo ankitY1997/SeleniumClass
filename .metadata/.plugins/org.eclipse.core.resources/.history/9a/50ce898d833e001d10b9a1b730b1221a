@@ -1,0 +1,14 @@
+package constructor26sep;
+
+public class Constructor3Driver 
+{
+public static void main(String []args)
+{
+	Constructor3 m=new Constructor3("ankit",24,25000);
+	m.display();
+	System.out.println(m);
+	Constructor3 n=new Constructor3("ankit",24,25000);
+	n.display();
+	System.out.println(n);
+}
+}

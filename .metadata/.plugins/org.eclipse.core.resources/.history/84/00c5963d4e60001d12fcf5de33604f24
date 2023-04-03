@@ -1,0 +1,25 @@
+package practice;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Input {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+		driver.get("https://www.cleartrip.com/?&utm_source=bing&utm_medium=cpc&utm_campaign=BR_Cleartrip|Main_E||cleartrip|e&msclkid=79898634b3571f57e1ede55f0aa25054");
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//input[@placeholder=\"Enter mobile number\"]")).sendKeys("9340256458");
+	
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button/span[@class=\" fs-3 fw-500\"]")).click();
+		
+	}
+
+}

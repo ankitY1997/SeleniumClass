@@ -1,0 +1,68 @@
+package Annotation;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.basepage.BasePage;
+
+public class ParameterAnnotation extends BasePage 
+{
+
+	SoftAssert softassert=new SoftAssert();
+	
+	@Parameters({"browser","url"})
+	@Test
+	public void test(@Optional("chrome")String browser,String url)
+	{
+		
+		openBrowser(browser);
+		openUrl(url);
+		driver.manage().window().maximize();
+		
+		String expToolTiptxt="Email address or phone number";
+		WebElement username=driver.findElement(By.xpath("//input[@name=\"email\"]"));
+		String actualtooltipTxt=username.getAttribute("placeholder");//in this method we can pass any thing
+		
+		
+		System.out.println(actualtooltipTxt);
+		
+		softassert.assertEquals(actualtooltipTxt,expToolTiptxt," the tool tip txt is failed ");
+		
+		
+		driver.quit();
+		softassert.assertAll();
+		
+		
+	}
+	
+	
+	@Parameters({"browser","url"})
+    @Test
+    
+
+	
+	public void test1(@Optional("Edge")String browser,String url)
+	{
+		
+		openBrowser(browser);
+		openUrl("https:/www.facebook.com/");
+		driver.manage().window().maximize();
+		String color= driver.findElement(By.xpath("//button[@name=\"login\"]")).getCssValue("background-color");
+		
+		System.out.println(color);
+		
+		
+		//if rgba a value is 1=that means it not transparent or opaque
+		//if rgba a value us 0=that means its transprable
+	}
+
+	
+	
+	
+	
+	
+}

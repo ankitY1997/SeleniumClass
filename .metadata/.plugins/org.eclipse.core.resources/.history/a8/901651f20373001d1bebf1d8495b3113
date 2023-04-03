@@ -1,0 +1,36 @@
+package Practice;
+
+public class Program1 {
+
+	public static void main(String[] args) 
+	{
+		
+		String x="anbdgdgdh";
+		String y=x;
+		int i=0;
+		int num=x.length();
+		System.out.println(num);
+		while( i<x.length())
+		{
+			char c=x.charAt(i);
+			
+			char m=y.charAt(i);
+			
+			System.out.println(c);
+			
+			
+			if(c>=m)
+			{
+				
+			}
+			
+			i++;
+
+
+		}
+		
+	}
+	
+	
+
+}

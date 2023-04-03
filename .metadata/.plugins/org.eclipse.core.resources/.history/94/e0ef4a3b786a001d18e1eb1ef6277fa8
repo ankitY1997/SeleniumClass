@@ -1,0 +1,21 @@
+package Practice1;
+
+public class ElectricCar extends Car 
+{
+String name="fortuner";
+String colour="white";
+
+
+public ElectricCar()
+{
+	super("ankit","raj");
+	System.out.println("this is child constructor");
+	
+}
+
+public static void main(String[] args) 
+{
+	ElectricCar c=new ElectricCar();
+}
+ 
+}

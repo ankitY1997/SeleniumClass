@@ -1,0 +1,38 @@
+package constructor26sep;
+
+public class Constructor1 
+{
+/*here we are discussing about the constructor and what is constructor
+ * constructor we mostly used to initializing purpose or because constructor will provide faster 
+ * Efficiency rather than method
+ * constructor has access modifier but method also have access modifier constructor name must be same as class name but method name we can use anything.
+ * constructor doesn't has a non access modifier like static and final abstraction and also it doesnt have any return type but our method has a return type 
+ * constructor will have default body and its available by default any program compiler create its self constructor body.
+ * if you want to call a constructor than you have to use new keyword constructor will also have a parenthesis it also parameterized and non parameterized.
+ * so lets see working of constructor
+ * if you want to see how constructor will load all component than you put a command ( javap.programname)
+ */
+	//now we will check by default constructor so we have to use (javap programname) constructor is also two type one is default constructor and second one is user define constructor
+	String a;
+	int b;
+	//default constructor
+	public static void main(String []args)
+	{
+		System.out.println("this is main method");
+		Constructor1 m=new Constructor1("ankit");
+	}
+	public  void test()
+	{
+		System.out.println("this is test method");
+	}
+	public Constructor1(String n)
+	
+	{
+		a=n;
+		System.out.println(a);
+	}
+	{//first they fill all non static members then they initialized the constructor block
+		System.out.println("this is non static method");
+		System.out.println(a);
+	}
+}

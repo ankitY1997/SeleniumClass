@@ -1,0 +1,6 @@
+package abstraction;
+
+public interface TATA 
+{
+public void pf();
+}

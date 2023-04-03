@@ -1,0 +1,31 @@
+package Set1;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Program {
+
+	public static void main(String[] args) 
+	{
+		
+		Set<String> set=new HashSet<String>();
+		
+		//if you want to add so you can use this 
+		
+		set.add("ankit");
+		set.add("shubham");
+		set.add("sagar");
+		
+		//if you want  to to read the data so you acn use on of the method is called iterator
+		
+	Iterator<String> it=set.iterator();
+		
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}
+		
+	}
+
+}

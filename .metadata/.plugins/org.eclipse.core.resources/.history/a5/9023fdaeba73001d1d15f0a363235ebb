@@ -1,0 +1,39 @@
+package DriverInterFaceOperation;
+
+import org.openqa.selenium.WebDriver.Navigation;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class NavigationBrowserHistrory extends BasePage 
+{
+
+	/*navigation is an inter faces which extends webdriver interface in there  are soo many methods 
+* in this help we can perform all browser task like backward /forward /refresh and /opennew url//to(Stringurl) task
+* so lets see how we can do
+	*/
+	@Test
+	public void naviagtion() throws InterruptedException
+	{
+		openBrowser("Edge");
+		openUrl("https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebDriver.html");
+	
+		//first we are performing back operation back operation we have command driver.naviagte().back();
+	Navigation nav=driver.navigate();
+	                                   //this return type is navigation
+	
+	//now we can perform the operations
+	
+	nav.back();
+	
+	Thread.sleep(5000);
+	
+	}
+	@AfterTest
+	
+	public void closeCon()
+	{
+		driver.quit();
+	}
+}

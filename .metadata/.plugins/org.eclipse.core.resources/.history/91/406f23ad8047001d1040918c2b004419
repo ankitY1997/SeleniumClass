@@ -1,0 +1,42 @@
+package practice_java;
+import java.util.Scanner;
+
+public class Happy_number 
+{
+	static int c;
+	public static void main(String []args)
+	{
+		
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the number");
+	int n=sc.nextInt();
+	int y=2;
+	main(y,n);
+	Happy_number.c=n;
+	}
+	
+
+public static void main(int y,int n)
+{
+	int x;
+	double pow;
+	int z=0;
+	while(n!=0)
+	{
+		while(n!=0)
+		{		
+		x=n%10;
+		
+		pow=Math.pow(x,y);
+		
+		z+=pow;
+		n=n/10;
+		}
+	 if (n==1)
+		{
+		System.out.println("this is the help number"+c);
+		}
+		n=z;
+	}
+}
+}

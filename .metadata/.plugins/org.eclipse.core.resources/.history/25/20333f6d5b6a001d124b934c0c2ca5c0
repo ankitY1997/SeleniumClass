@@ -1,0 +1,56 @@
+package practice;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Calculator 
+{
+
+	public static void main(String[] args)
+	{
+		
+		
+System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+		
+		WebDriver driver=new EdgeDriver();
+	    driver.manage().window().maximize();
+	    
+	    driver.get("https://emicalculator.net/");
+	    
+	    List<WebElement> callist=driver.findElements(By.xpath("//*[local-name()='svg']//*[name()='g' and @class=\"highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker\"]//*[name()='rect']"));
+	    Actions act=new Actions(driver);
+	    int num=callist.size();
+	    System.out.println(num);
+	    
+	    int count=1;s
+	  for(int i=1,j=1;i<=num;i++)
+	  {
+		  count++;
+		  
+		  while((j<=num)&&(count<=23))
+		  {
+			  
+		  
+		  WebElement higher=driver.findElement(By.xpath("//*[local-name()='svg']//*[name()='g' and @class=\"highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker\"]//*[name()='rect']["+j+"]"));
+		 act.moveToElement(higher).build().perform();
+		 
+		 j++;
+		 
+		 
+		  }
+		  
+		 WebElement lower=driver.findElement(By.xpath("(//*[local-name()=\"svg\"]//*[name()='g' and (@class=\"highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker\") ])//*[name()='rect']["+i+"]"));
+		  
+		  act.moveToElement(lower).build().perform();
+		  
+		  
+	  }
+	    
+	}
+	
+}

@@ -1,0 +1,80 @@
+package Assignment;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.basepage.BasePage;
+
+public class GroupTest extends BasePage
+{
+	//@Parameters({"browser","url","username","passward"})
+
+	@Test(groups="smoke",description="log in test case")
+	public void testCase1()
+	{
+		
+		openBrowser("Edge");
+		openUrl("https://www.facebook.com/");
+		
+		driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys("9407149937");
+		driver.findElement(By.xpath("//input[@placeholder=\"Password\"]")).sendKeys("ankit@123");
+		
+		driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+		
+	/*	String expname="HomePage";
+		String actualname=driver.findElement(By.xpath("//img[@alt=\"Facebook\"]")).getText();
+		
+		if(expname.equals(actualname)) {
+			
+			
+			System.out.println("test is passed");
+		}
+		else 
+		{
+			System.out.println("test is failed");
+		}
+		*/
+		
+		
+		
+		
+	}
+	
+	
+     @Test(groups="smoke",description="verify login test cases")
+	
+	public void testCase2()
+	{
+		openBrowser("chrome");
+		openUrl("https://www.instagram.com/");
+		
+		driver.findElement(By.xpath("//span[text()='Phone number, username, or email']")).sendKeys("9407149937");
+		driver.findElement(By.xpath("//span[text()='Password']")).sendKeys("ankit@124");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
+		
+		/*String expname="HomePage";
+		String actualname=driver.findElement(By.xpath("//i[@aria-label=\"Instagram\"]")).getText();
+		
+		if(expname.equals(actualname))
+		{
+			System.out.println("test is passed");
+		}
+		else
+		{
+			System.out.println("test is failed");
+		}*/
+		
+	}
+	
+     
+     @AfterTest
+     
+     public void closeConn()
+     {
+    	 driver.quit();
+     }
+	
+}

@@ -1,0 +1,65 @@
+package Assignment1;
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
+public class Program6 
+{
+
+	
+	public static void main(String[] args) {
+		
+		
+		String word="ankiy124356";
+		
+		
+	char name='A';
+	
+	System.out.println((int)name);
+	 for(int i=0;i<word.length();i++)
+		{
+			char first=word.charAt(i);
+			int ch=(int)first;
+			if((ch>=65&&ch<=90)||(ch>=97&&ch<=122))
+			{
+				System.out.print((char)ch);
+			}
+			
+		}
+	 
+	 minMax();
+	}
+	
+	
+	public static void minMax()
+	{
+		int []a= {12,20,10,40,57,57,68,89,40,90,47};
+		
+		int m=a[0];
+		
+		for(int i=0,j=1;i<a.length;i++,j++)
+		{
+			
+			if(j<a.length)
+			{
+				
+				if(a[i]>a[j])
+				{
+					System.out.println(a[i]);
+				}
+				
+			}
+			
+		}
+		
+		for(int i=0;i<a.length;i++) 
+		{
+		
+			if(a[i]<m)
+			{
+				m=a[i];
+				
+			}
+		}
+		System.out.println("minimum number is :"+m);
+	}
+}

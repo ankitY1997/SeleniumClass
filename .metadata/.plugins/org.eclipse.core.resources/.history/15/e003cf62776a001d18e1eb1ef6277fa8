@@ -1,0 +1,32 @@
+package Practice1;
+
+public class Car {
+
+	String name="Toyata";
+	String colour="black";
+	
+	//this() 
+	public Car()
+	{
+		System.out.println("this is first constructor");
+	}
+
+	public Car(String name)
+	{
+		this();
+		System.out.println("this is second constructor");
+	}
+	public Car(String name,String colour)
+	{
+		this(name);
+		
+		System.out.println("this is third constructor");
+	}
+	
+	public static void main(String [] args)
+	{
+		Car c=new Car("toyota","black");
+	}
+	
+	
+}

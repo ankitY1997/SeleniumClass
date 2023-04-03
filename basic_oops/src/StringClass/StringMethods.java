@@ -1,0 +1,190 @@
+package StringClass;
+
+public class StringMethods 
+{
+
+	//String class provide some methods 
+	
+//1)=>length()=>it is used to find out the length of string
+//2)=>charAt()=>its method which is used to get a character from the string by  providing a index
+	
+//3)=>trim()=>its a method which is used to remove starting spaces and last spaces from 
+// any string 
+
+	
+	//4)=>toCharArray()=>its a method which is used to convert string to array
+	
+	//so let see the method one by one 
+	
+	
+	public static void main(String[] args) 
+	{
+		
+		String c="mohan is very happy";
+		
+		//now if you want to find out the length of String so we have one method
+	//so we have to use 
+		
+		System.out.println(c.length());
+		
+		System.out.println("==========================================");
+		method();
+		System.out.println("==========================================");
+		method1();
+		System.out.println("==============================================");
+		method3();
+		
+		method4();
+	}
+	
+	//now we have to see another method 
+	
+	// toCharArray()=>chararray is a method which is used to convert string class
+	
+	public static void method()
+	{
+		
+		String var="hello mohan";
+		
+		char [] p=var.toCharArray();
+		
+		
+		//for each loop is used when you are doing array so if you want to so we have to 
+		//convert string in to array so we have one method is toCharArray();
+		
+		for(char c:p)
+		{
+			System.out.println(c);
+		}
+		
+	}
+	
+	
+	// now we have another method is =>.charAt(intdex value) =>this is method 
+	//which is used to get the character from the string by using index value
+	
+	
+	//.charAt()=>
+	
+	
+	public static void method1()
+	{
+		
+		String c="ankit*@@12564588";
+		
+		//we can directly fetch the values 
+		
+		for(int i=0;i<c.length();i++)
+		{
+			char char_=c.charAt(i);
+			
+			//lets remove the special character
+			
+			
+			if(((char_>='a'&&char_<='z'))||((char_>='A'&&char_<='z'))||((char_>='0')&&(char_<='9')))
+			{
+			System.out.println(char_);	
+			}
+			
+		}
+		
+		//reverse string 
+		
+		String newrev="";
+		
+		for(int i=c.length()-1;i>=0;i--)
+		{
+			char rev=c.charAt(i);
+			
+			newrev=newrev+rev;
+			
+			
+			
+			
+		}
+		System.out.println(newrev);
+		
+	}
+	
+	//now we have another method which is used to remove the spaces from starting string and and ending string 
+	
+	//method name is :=>trim();
+	
+	
+	//method3
+	
+	
+	public static void method3()
+	{
+		
+		//********************String immutable concepts***********************************\\
+		
+		String c="    Mohan  ";
+		
+		
+		//now we have to see string immutable concepts 
+		
+		//here we want to perform some operation 
+		
+		//like trim operation 
+		
+		c.trim();
+		
+		System.out.println(c);//nothing will change but why while we have done  some certain operation on this string
+		
+		//so what is happening right now at that time creates a new object and
+		//this object reference given by jvm itself.so thats why we are not able to fetch it
+		//now we have to provide a reference to fetch that element
+		
+		String s2=c.trim();
+		
+		System.out.println(c);
+		
+		System.out.println("**************************");
+		System.out.println(s2);//now we will see value will be changed
+		
+		System.out.println(c.trim());//here we can see value will be changed
+		
+		
+	}
+	
+	public static void method4()
+	{
+		
+		//Java Program to sort characters of string in Ascending Order.
+
+		
+		String c="sabdubd";
+		char []p=c.toCharArray();
+		char l=p[0];
+		int j=1;
+		String max="";
+		String  min="";
+		
+	for(int i=0;i<p.length;i++)
+	{
+		j=1;
+		while(j<p.length)
+		{
+		if(p[j]>p[i])
+		{
+			max=max+p[j];
+		}
+		else if(p[j]<p[i])
+		{
+			min=min+p[j];
+		}
+		
+		j++;
+		
+		}
+	
+	}
+	System.out.println(max);
+	System.out.println(min);
+			
+			
+		
+		}
+	
+}

@@ -1,0 +1,32 @@
+package Action_class;
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+
+public class Program1 {
+/*basically here we can see the usage of action class supposed if you wan to perform some 
+ * speccific task throw a keyboard so we can use action class 
+ */
+	public static void main(String[] args) 
+	{
+	
+		System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+	
+	WebDriver driver=new EdgeDriver();
+	
+	driver.get("https://www.flipkart.com/");
+	Actions act=new Actions(driver);
+	
+	WebElement fashion=driver.findElement(By.xpath("//div[text()=\"Fashion\"]"));
+	
+		act.moveToElement(fashion).build().perform();
+
+	}
+
+}

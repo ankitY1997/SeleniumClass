@@ -1,0 +1,21 @@
+package Practice1;
+
+public class WaterCar extends ElectricCar
+{
+	public WaterCar(String name, String colour) {
+		super(name, colour);
+		System.out.println("this is water car constructor");
+	}
+
+
+
+	String name="xyz";
+	
+	
+	
+	public static void main(String [] args)
+	{
+		WaterCar c=new WaterCar("ankit","raj");
+	}
+	
+}

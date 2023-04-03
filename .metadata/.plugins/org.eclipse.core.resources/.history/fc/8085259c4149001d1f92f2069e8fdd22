@@ -1,0 +1,15 @@
+package StringHandling;
+
+public class String4 
+{
+public static void main(String []args)
+{
+	String s="hello akash rana";
+	for(int i=1;i<s.length();i++)
+	{
+		char c=s.charAt(i);
+		int z=' ';
+		System.out.println(z);
+	}
+}
+}

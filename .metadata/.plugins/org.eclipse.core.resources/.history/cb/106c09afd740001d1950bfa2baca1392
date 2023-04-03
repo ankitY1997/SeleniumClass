@@ -1,0 +1,47 @@
+package methodOverLoading;
+import java.util.Scanner;
+public class Method_over_2 
+{
+	public  void mul(int a,int b)
+	{
+	System.out.println(a*b);
+	}
+	public void mul(int x,int y)
+	{
+		System.out.println(x*y);
+		
+	}
+	public void mul(int x,int y,int z)
+	{
+		System.out.println(x*y*z);
+	}
+	public static void main(String []args)
+	{
+		Method_over_2 m=new Method_over_2();
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter the value  of  a :");
+		int a=sc.nextInt();
+		System.out.println("enter the value of  b :");
+		int b=sc.nextInt();
+		System.out.println("enter the value of  x :");
+		int x=sc.nextInt();
+		System.out.println("enter the value of  y :");
+		int y=sc.nextInt();
+		System.out.println("enter the value of  z :");
+		int z=sc.nextInt();
+		
+		if((a==a)&&(b==b)&&(x==0)&&(y==0)&&(z==0))
+		{
+		m.mul(a,b);	
+		}
+		else if((x==x)&&(y==y)&&(a==0)&&(b==0)&&(z==0))
+		{
+			m.mul(x,y);
+		}
+		else if((x==x)&&(y==y)&&(a==0)&&(b==0)&&(z==z))
+		{
+			m.mul(x,y,z);
+		}
+		
+	}
+}

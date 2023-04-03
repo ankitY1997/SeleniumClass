@@ -1,0 +1,30 @@
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+
+public class Program2Test {
+	
+	public static WebDriver driver;
+  @Test
+  public void f() {
+	 
+		
+		driver.get("https://www.bing.com/search?q=testng&cvid=2d2b63705b584ccba0cefe247cf90291&aqs=edge.0.0l9.2270j0j1&pglt=299&FORM=ANNTA1&PC=HCTS");
+  }
+  @BeforeTest
+  public void beforeMethod() 
+  {
+	  System.setProperty("webdriver.edge.driver","E:\\object oriented programin language\\SeleniumIntroduction\\Driver\\msedgedriver.exe");
+  WebDriver driver=new EdgeDriver();
+	
+  }
+
+  @AfterTest
+  public void afterMethod() {
+  }
+
+}

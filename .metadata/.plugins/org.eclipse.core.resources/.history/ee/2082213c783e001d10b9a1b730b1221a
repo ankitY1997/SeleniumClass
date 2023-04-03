@@ -1,0 +1,10 @@
+package constructor26sep;
+
+public class Constructor2Driver
+{
+public static void main(String []aegs)
+{
+	Constructor2 a=new Constructor2("ankit",12,30,123456);
+a.display();
+}
+}
